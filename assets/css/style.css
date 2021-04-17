@@ -98,7 +98,7 @@ textarea:focus,
     border-radius: 50px;
     display: inline-block;
     min-width: 140px;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 700;
 }
 
@@ -300,7 +300,6 @@ textarea:focus,
 .template-4_header .action-area > ul > li.login > a:hover {
     background-color: var(--color-hover);
 }
-
 
 .template-4_main {
     padding: 30px 0;
