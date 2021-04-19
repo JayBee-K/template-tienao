@@ -44,6 +44,7 @@
 			--color-red: #cb2b0e;
 			--bg-main: #f6f8fe;
 			--bg-light: #F7F7F7;
+			--bg-white: #fff;
 			--text-dark: #343a40;
 			--text-dark-50: #464748;
 			--text-gray: #6c757d;
@@ -167,910 +168,613 @@
 <div class="template-4_main">
 	<div class="container">
 		<div class="row row-10">
-			<div class="col-md-3 mt-4 mt-md-0">
-				<div class="template-4_sidebar">
+			<div class="col-md-3 mt-20px mt-md-0">
+				<div class="template-4_sidebar" id="changeHeightSidebar">
 					<div class="sidebar-item">
 						<div class="card border-0 rounded-lg shadow-sm bg-white">
 							<div class="card-header bg-transparent rounded-0 border-0">
 								<div class="card-title">
-									Bạn muốn <span class="text-uppercase text-success">bán</span>
+									Bạn muốn
+									<ul class="nav nav-tabs">
+										<li class="nav-item">
+											<a class="nav-link active" data-toggle="tab" href="#sidebar-buy">Bán</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" data-toggle="tab" href="#sidebar-sell">Mua</a>
+										</li>
+									</ul>
 								</div>
 							</div>
 							<div class="card-body">
-								<ul class="list-unstyled mb-0">
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/bitcoin.png" alt="">
-												Bitcoin
-											</div>
-											<div class="price text-success">
-												1.482.167.708 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/etherum.png" alt="">
-												Ethereum
-											</div>
-											<div class="price text-success">
-												58.529.184 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/usdt.png" alt="">
-												USDT ERC20
-											</div>
-											<div class="price text-success">
-												24.347 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/fil.png" alt="">
-												Filecoin
-											</div>
-											<div class="price text-success">
-												4.633.365 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/riple.png" alt="">
-												Ripple
-											</div>
-											<div class="price text-success">
-												38.365 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/dogecoin.png" alt="">
-												Dogecoin
-											</div>
-											<div class="price text-success">
-												6.562 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/btcst.png" alt="">
-												BTCST
-											</div>
-											<div class="price text-success">
-												1.964.911 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/bitcoin.png" alt="">
-												Bitcoin
-											</div>
-											<div class="price text-success">
-												1.482.167.708 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/etherum.png" alt="">
-												Ethereum
-											</div>
-											<div class="price text-success">
-												58.529.184 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/usdt.png" alt="">
-												USDT ERC20
-											</div>
-											<div class="price text-success">
-												24.347 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/fil.png" alt="">
-												Filecoin
-											</div>
-											<div class="price text-success">
-												4.633.365 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/riple.png" alt="">
-												Ripple
-											</div>
-											<div class="price text-success">
-												38.365 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/dogecoin.png" alt="">
-												Dogecoin
-											</div>
-											<div class="price text-success">
-												6.562 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/btcst.png" alt="">
-												BTCST
-											</div>
-											<div class="price text-success">
-												1.964.911 đ
-											</div>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="sidebar-item">
-						<div class="card border-0 rounded-lg shadow-sm bg-white">
-							<div class="card-header bg-transparent rounded-0 border-0">
-								<div class="card-title">
-									Bạn muốn <span class="text-uppercase text-danger">mua</span>
+								<div class="tab-content">
+									<div class="tab-pane fade show active" id="sidebar-buy">
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/bitcoin.png" alt="">
+														Bitcoin
+													</div>
+													<div class="price text-success">
+														1.482.167.708 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/etherum.png" alt="">
+														Ethereum
+													</div>
+													<div class="price text-success">
+														58.529.184 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/usdt.png" alt="">
+														USDT ERC20
+													</div>
+													<div class="price text-success">
+														24.347 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/fil.png" alt="">
+														Filecoin
+													</div>
+													<div class="price text-success">
+														4.633.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/riple.png" alt="">
+														Ripple
+													</div>
+													<div class="price text-success">
+														38.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/bitcoin.png" alt="">
+														Bitcoin
+													</div>
+													<div class="price text-success">
+														1.482.167.708 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/etherum.png" alt="">
+														Ethereum
+													</div>
+													<div class="price text-success">
+														58.529.184 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/usdt.png" alt="">
+														USDT ERC20
+													</div>
+													<div class="price text-success">
+														24.347 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/fil.png" alt="">
+														Filecoin
+													</div>
+													<div class="price text-success">
+														4.633.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/riple.png" alt="">
+														Ripple
+													</div>
+													<div class="price text-success">
+														38.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/dogecoin.png" alt="">
+														Dogecoin
+													</div>
+													<div class="price text-success">
+														6.562 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/btcst.png" alt="">
+														BTCST
+													</div>
+													<div class="price text-success">
+														1.964.911 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/bitcoin.png" alt="">
+														Bitcoin
+													</div>
+													<div class="price text-success">
+														1.482.167.708 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/etherum.png" alt="">
+														Ethereum
+													</div>
+													<div class="price text-success">
+														58.529.184 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/usdt.png" alt="">
+														USDT ERC20
+													</div>
+													<div class="price text-success">
+														24.347 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/fil.png" alt="">
+														Filecoin
+													</div>
+													<div class="price text-success">
+														4.633.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/riple.png" alt="">
+														Ripple
+													</div>
+													<div class="price text-success">
+														38.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/dogecoin.png" alt="">
+														Dogecoin
+													</div>
+													<div class="price text-success">
+														6.562 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/btcst.png" alt="">
+														BTCST
+													</div>
+													<div class="price text-success">
+														1.964.911 đ
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="tab-pane fade" id="sidebar-sell">
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/bitcoin.png" alt="">
+														Bitcoin
+													</div>
+													<div class="price text-success">
+														1.482.167.708 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/etherum.png" alt="">
+														Ethereum
+													</div>
+													<div class="price text-success">
+														58.529.184 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/usdt.png" alt="">
+														USDT ERC20
+													</div>
+													<div class="price text-success">
+														24.347 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/fil.png" alt="">
+														Filecoin
+													</div>
+													<div class="price text-success">
+														4.633.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/riple.png" alt="">
+														Ripple
+													</div>
+													<div class="price text-success">
+														38.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/bitcoin.png" alt="">
+														Bitcoin
+													</div>
+													<div class="price text-success">
+														1.482.167.708 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/etherum.png" alt="">
+														Ethereum
+													</div>
+													<div class="price text-success">
+														58.529.184 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/usdt.png" alt="">
+														USDT ERC20
+													</div>
+													<div class="price text-success">
+														24.347 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/fil.png" alt="">
+														Filecoin
+													</div>
+													<div class="price text-success">
+														4.633.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/riple.png" alt="">
+														Ripple
+													</div>
+													<div class="price text-success">
+														38.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/dogecoin.png" alt="">
+														Dogecoin
+													</div>
+													<div class="price text-success">
+														6.562 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/btcst.png" alt="">
+														BTCST
+													</div>
+													<div class="price text-success">
+														1.964.911 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/bitcoin.png" alt="">
+														Bitcoin
+													</div>
+													<div class="price text-success">
+														1.482.167.708 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/etherum.png" alt="">
+														Ethereum
+													</div>
+													<div class="price text-success">
+														58.529.184 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/usdt.png" alt="">
+														USDT ERC20
+													</div>
+													<div class="price text-success">
+														24.347 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/fil.png" alt="">
+														Filecoin
+													</div>
+													<div class="price text-success">
+														4.633.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/riple.png" alt="">
+														Ripple
+													</div>
+													<div class="price text-success">
+														38.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/dogecoin.png" alt="">
+														Dogecoin
+													</div>
+													<div class="price text-success">
+														6.562 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/btcst.png" alt="">
+														BTCST
+													</div>
+													<div class="price text-success">
+														1.964.911 đ
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
 								</div>
-							</div>
-							<div class="card-body">
-								<ul class="list-unstyled mb-0">
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/bitcoin.png" alt="">
-												Bitcoin
-											</div>
-											<div class="price text-danger">
-												1.482.167.708 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/etherum.png" alt="">
-												Ethereum
-											</div>
-											<div class="price text-danger">
-												58.529.184 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/usdt.png" alt="">
-												USDT ERC20
-											</div>
-											<div class="price text-danger">
-												24.347 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/fil.png" alt="">
-												Filecoin
-											</div>
-											<div class="price text-danger">
-												4.633.365 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/riple.png" alt="">
-												Ripple
-											</div>
-											<div class="price text-danger">
-												38.365 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/dogecoin.png" alt="">
-												Dogecoin
-											</div>
-											<div class="price text-danger">
-												6.562 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/btcst.png" alt="">
-												BTCST
-											</div>
-											<div class="price text-danger">
-												1.964.911 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/bitcoin.png" alt="">
-												Bitcoin
-											</div>
-											<div class="price text-danger">
-												1.482.167.708 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/etherum.png" alt="">
-												Ethereum
-											</div>
-											<div class="price text-danger">
-												58.529.184 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/usdt.png" alt="">
-												USDT ERC20
-											</div>
-											<div class="price text-danger">
-												24.347 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/fil.png" alt="">
-												Filecoin
-											</div>
-											<div class="price text-danger">
-												4.633.365 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/riple.png" alt="">
-												Ripple
-											</div>
-											<div class="price text-danger">
-												38.365 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/dogecoin.png" alt="">
-												Dogecoin
-											</div>
-											<div class="price text-danger">
-												6.562 đ
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="" class="d-flex align-items-center justify-content-between">
-											<div class="text">
-												<img src="./assets/images/coin/btcst.png" alt="">
-												BTCST
-											</div>
-											<div class="price text-danger">
-												1.964.911 đ
-											</div>
-										</a>
-									</li>
-								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-9">
-				<div class="template-4_aboutus">
-					<div class="card bg-white rounded-lg shadow-sm border-0">
-						<div class="row align-items-center no-gutters">
-							<div class="col-md-8">
-								<div class="card-body">
-									<h5 class="card-title">Webtienao làm gì?</h5>
-									<p class="card-text">- Trao đổi Coin uy tín tại Việt Nam giá tốt nhất</p>
-									<p class="card-text">- Cho thuê công cụ hỗ trợ trade Binance</p>
-									<p class="card-text">- Trung gian hỗ trợ giao dịch p2p chống lừa đảo trực tuyến.</p>
-									<p class="card-text">- Cấp API nạp/rút các loại coin, tự động convert về usdt.</p>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="d-flex align-items-stretch justify-content-end pr-4">
-									<img src="./assets/images/aboutus.webp" class="card-img rounded-0"
-									     alt="Webtienao làm gì?">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="template-4_exchange mt-20px">
-					<div class="card border-0 rounded-lg shadow-sm bg-white">
-						<div class="card-header bg-transparent rounded-0 border-0">
-							<div class="card-title">
-								Mua bán tiền ảo
-							</div>
-							<ul class="nav nav-tabs">
-								<li class="nav-item">
-									<a class="nav-link active" data-toggle="tab" href="#buy">Bán</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" data-toggle="tab" href="#sell">Mua</a>
-								</li>
-							</ul>
-						</div>
-						<div class="card-body">
-							<div class="tab-content">
-								<div class="tab-pane fade show active" id="buy">
-									<form action="">
-										<div class="form-group">
-											<label class="mr-sm-2">Coin muốn gửi</label>
-											<div class="input-group mb-3">
-												<div class="input-group-prepend">
-													<label class="input-group-text"><i
-															class="fab fa-bitcoin"></i></label>
-												</div>
-												<select name="" class="form-control">
-													<option value="">-- Chọn coin muốn gửi --</option>
-													<option value="">Bitcoin</option>
-													<option value="">Litecoin</option>
-													<option value="">Ethereum</option>
-													<option value="">USDT ERC20</option>
-													<option value="">Filecoin</option>
-													<option value="">USDT TRC20</option>
-													<option value="">USDT OMNI</option>
-													<option value="">Litecoin</option>
-												</select>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="mr-sm-2">Ngân hàng muốn gửi</label>
-											<div class="input-group mb-3">
-												<div class="input-group-prepend">
-													<label class="input-group-text"><i
-															class="fas fa-university"></i></label>
-												</div>
-												<select name="" class="form-control">
-													<option value="">-- Chọn ngân hàng muốn gửi --</option>
-													<option value="">Đông Á</option>
-													<option value="">Maritime Bank</option>
-													<option value="">BIDV</option>
-													<option value="">MB Bank</option>
-													<option value="">Vietinbank</option>
-													<option value="">Á Châu</option>
-													<option value="">Nông nghiệp</option>
-													<option value="">Techcombank</option>
-												</select>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="mr-sm-2">Số coin bán</label>
-											<div class="input-group mb-3">
-												<input type="text" name="" class="form-control" placeholder="1 BTC">
-												<input type="text" name="" class="form-control"
-												       placeholder="1,525,666,249 VND">
-											</div>
-										</div>
-										<div class="text-center mt-5">
-											<button class="btn btn-success template-4_btn">
-												Tiếp tục
-											</button>
-										</div>
-									</form>
-								</div>
-								<div class="tab-pane fade" id="sell">
-									<form action="">
-										<div class="form-group">
-											<label class="mr-sm-2">Coin muốn bán</label>
-											<div class="input-group mb-3">
-												<div class="input-group-prepend">
-													<label class="input-group-text"><i
-															class="fab fa-bitcoin"></i></label>
-												</div>
-												<select name="" class="form-control">
-													<option value="">-- Chọn coin muốn bán --</option>
-													<option value="">Bitcoin</option>
-													<option value="">Litecoin</option>
-													<option value="">Ethereum</option>
-													<option value="">USDT ERC20</option>
-													<option value="">Filecoin</option>
-													<option value="">USDT TRC20</option>
-													<option value="">USDT OMNI</option>
-													<option value="">Litecoin</option>
-												</select>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="mr-sm-2">Ngân hàng muốn gửi</label>
-											<div class="input-group mb-3">
-												<div class="input-group-prepend">
-													<label class="input-group-text"><i
-															class="fas fa-university"></i></label>
-												</div>
-												<select name="" class="form-control">
-													<option value="">-- Chọn ngân hàng muốn gửi --</option>
-													<option value="">Đông Á</option>
-													<option value="">Maritime Bank</option>
-													<option value="">BIDV</option>
-													<option value="">MB Bank</option>
-													<option value="">Vietinbank</option>
-													<option value="">Á Châu</option>
-													<option value="">Nông nghiệp</option>
-													<option value="">Techcombank</option>
-												</select>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="mr-sm-2">Số coin bán</label>
-											<div class="input-group mb-3">
-												<input type="text" name="" class="form-control" placeholder="1 BTC">
-												<input type="text" name="" class="form-control"
-												       placeholder="1,525,666,249 VND">
-											</div>
-										</div>
-										<div class="text-center mt-5">
-											<button class="btn btn-success template-4_btn">
-												Tiếp tục
-											</button>
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row row-10">
-					<div class="col-md-6">
-						<div class="template-4_exchange mt-20px">
-							<div class="card border-0 rounded-lg shadow-sm bg-white">
-								<div class="card-header bg-transparent rounded-0 border-0">
-									<div class="card-title">
-										Chuyển tiền tiền tệ
-									</div>
-									<p class="mb-0">
-										USD, EUR, USDT, BTC, BCH, ETH, LTC, ERP, DOGE VÀ NHIỀU COIN ẢO KHÁC
-									</p>
-								</div>
-								<div class="card-body">
-									<form action="">
-										<div class="form-group">
-											<label class="mr-sm-2">Coin muốn đổi</label>
-											<div class="input-group mb-3">
-												<div class="input-group-prepend">
-													<label class="input-group-text"><i
-															class="fab fa-bitcoin"></i></label>
-												</div>
-												<select name="" class="form-control">
-													<option value="">-- Chọn coin muốn đổi --</option>
-													<option value="">Bitcoin</option>
-													<option value="">Litecoin</option>
-													<option value="">Ethereum</option>
-													<option value="">USDT ERC20</option>
-													<option value="">Filecoin</option>
-													<option value="">USDT TRC20</option>
-													<option value="">USDT OMNI</option>
-													<option value="">Litecoin</option>
-												</select>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="mr-sm-2">Coin muốn nhận</label>
-											<div class="input-group mb-3">
-												<div class="input-group-prepend">
-													<label class="input-group-text"><i
-															class="fas fa-university"></i></label>
-												</div>
-												<select name="" class="form-control">
-													<option value="">-- Chọn coin muốn nhận --</option>
-													<option value="">Bitcoin</option>
-													<option value="">Litecoin</option>
-													<option value="">Ethereum</option>
-													<option value="">USDT ERC20</option>
-													<option value="">Filecoin</option>
-													<option value="">USDT TRC20</option>
-													<option value="">USDT OMNI</option>
-													<option value="">Litecoin</option>
-												</select>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="mr-sm-2">Số coin chuyển đổi</label>
-											<div class="input-group mb-3">
-												<input type="text" name="" class="form-control"
-												       placeholder="1 Bitcoin">
-												<input type="text" name="" class="form-control"
-												       placeholder="25.03436170 ETH">
-											</div>
-										</div>
-										<div class="text-center mt-5">
-											<button class="btn btn-success template-4_btn">
-												Tiếp tục
-											</button>
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="template-4_exchange mt-20px">
-							<div class="card border-0 rounded-lg shadow-sm bg-white">
-								<div class="card-header bg-transparent rounded-0 border-0">
-									<div class="card-title">
-										Chuyển tiền liên ngân hàng
-									</div>
-									<p class="mb-0">
-										VCB, VTB, TECH, ACB, EAB, VIB, AGR, SCB, VPB, BIDV, MB VÀ NHIỀU BANK KHÁC
-									</p>
-								</div>
-								<div class="card-body">
-									<form action="">
-										<div class="form-group">
-											<label class="mr-sm-2">Chọn ngân hàng đổi</label>
-											<div class="input-group mb-3">
-												<div class="input-group-prepend">
-													<label class="input-group-text"><i
-															class="fab fa-bitcoin"></i></label>
-												</div>
-												<select name="" class="form-control">
-													<option value="">-- Chọn ngân hàng muốn đổi --</option>
-													<option value="">Đông Á</option>
-													<option value="">Maritime Bank</option>
-													<option value="">BIDV</option>
-													<option value="">MB Bank</option>
-													<option value="">Vietinbank</option>
-													<option value="">Á Châu</option>
-													<option value="">Nông nghiệp</option>
-													<option value="">Techcombank</option>
-												</select>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="mr-sm-2">Chọn Ngân hàng muốn nhân</label>
-											<div class="input-group mb-3">
-												<div class="input-group-prepend">
-													<label class="input-group-text"><i
-															class="fas fa-university"></i></label>
-												</div>
-												<select name="" class="form-control">
-													<option value="">-- Chọn ngân hàng muốn nhận --</option>
-													<option value="">Đông Á</option>
-													<option value="">Maritime Bank</option>
-													<option value="">BIDV</option>
-													<option value="">MB Bank</option>
-													<option value="">Vietinbank</option>
-													<option value="">Á Châu</option>
-													<option value="">Nông nghiệp</option>
-													<option value="">Techcombank</option>
-												</select>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="mr-sm-2">Số coin chuyển đổi</label>
-											<div class="input-group mb-3">
-												<input type="text" name="" class="form-control"
-												       placeholder="1.000.000 VNĐ">
-												<input type="text" name="" class="form-control"
-												       placeholder="1.000.000 VNĐ">
-											</div>
-										</div>
-										<div class="text-center mt-5">
-											<button class="btn btn-success template-4_btn">
-												Tiếp tục
-											</button>
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row row-10">
-					<div class="col-md-8">
-						<div class="template-4_table mt-20px">
-							<div class="card border-0 rounded-lg shadow-sm bg-white">
-								<div class="card-header bg-transparent rounded-0 border-0">
-									<div class="card-title">
-										Giao dịch gần đây
+				<div id="heightSidebar">
+					<div class="template-4_aboutus">
+						<div class="card bg-white rounded-lg shadow-sm border-0">
+							<div class="row align-items-center no-gutters">
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">Webtienao làm gì?</h5>
+										<p class="card-text">- Trao đổi Coin uy tín tại Việt Nam giá tốt nhất</p>
+										<p class="card-text">- Cho thuê công cụ hỗ trợ trade Binance</p>
+										<p class="card-text">- Trung gian hỗ trợ giao dịch p2p chống lừa đảo trực
+											tuyến.</p>
+										<p class="card-text">- Cấp API nạp/rút các loại coin, tự động convert về
+											usdt.</p>
 									</div>
 								</div>
-								<div class="card-body">
-									<div class="table-responsive">
-										<table class="table">
-											<thead>
-											<tr>
-												<th>Loại</th>
-												<th>Gửi</th>
-												<th>Nhận</th>
-												<th>Số tiền</th>
-												<th>Tạo lúc</th>
-											</tr>
-											</thead>
-											<tbody>
-											<tr>
-												<td>
-													<span class="text-white badge badge-success">
-														Bán
-													</span>
-												</td>
-												<td>
-													Tron
-												</td>
-												<td>
-													Techcombank
-												</td>
-												<td>10 TRX</td>
-												<td>
-													18/03/2021 15:09:12
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<span class="text-white badge badge-success">
-														Bán
-													</span>
-												</td>
-												<td>
-													Tron
-												</td>
-												<td>
-													Techcombank
-												</td>
-												<td>10 TRX</td>
-												<td>
-													18/03/2021 14:07:48
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<span class="text-white badge badge-success">
-														Bán
-													</span>
-												</td>
-												<td>
-													USDT TRC20
-												</td>
-												<td>
-													Techcombank
-												</td>
-												<td>10 USDT</td>
-												<td>
-													15/03/2021 18:49:39
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<span class="text-white badge badge-danger">
-														Mua
-													</span>
-												</td>
-												<td>
-													Techcombank
-												</td>
-												<td>
-													USDT TRC20
-												</td>
-												<td>20 USDT</td>
-												<td>
-													15/03/2021 04:12:26
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<span class="text-white badge badge-warning">
-														Đổi
-													</span>
-												</td>
-												<td>
-													Ethereum
-												</td>
-												<td>
-													USDT
-												</td>
-												<td>12.00000 USDT</td>
-												<td>
-													15/03/2021 04:12:26
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<span class="text-white badge badge-success">
-														Bán
-													</span>
-												</td>
-												<td>
-													USDT TRC20
-												</td>
-												<td>
-													Techcombank
-												</td>
-												<td>10 USDT</td>
-												<td>
-													15/03/2021 18:49:39
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<span class="text-white badge badge-danger">
-														Mua
-													</span>
-												</td>
-												<td>
-													Techcombank
-												</td>
-												<td>
-													USDT TRC20
-												</td>
-												<td>20 USDT</td>
-												<td>
-													15/03/2021 04:12:26
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<span class="text-white badge badge-warning">
-														Đổi
-													</span>
-												</td>
-												<td>
-													Ethereum
-												</td>
-												<td>
-													USDT
-												</td>
-												<td>12.00000 USDT</td>
-												<td>
-													15/03/2021 04:12:26
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<span class="text-white badge badge-success">
-														Bán
-													</span>
-												</td>
-												<td>
-													USDT TRC20
-												</td>
-												<td>
-													Techcombank
-												</td>
-												<td>10 USDT</td>
-												<td>
-													15/03/2021 18:49:39
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<span class="text-white badge badge-danger">
-														Mua
-													</span>
-												</td>
-												<td>
-													Techcombank
-												</td>
-												<td>
-													USDT TRC20
-												</td>
-												<td>20 USDT</td>
-												<td>
-													15/03/2021 04:12:26
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<span class="text-white badge badge-warning">
-														Đổi
-													</span>
-												</td>
-												<td>
-													Ethereum
-												</td>
-												<td>
-													USDT
-												</td>
-												<td>12.00000 USDT</td>
-												<td>
-													15/03/2021 04:12:26
-												</td>
-											</tr>
-											</tbody>
-										</table>
+								<div class="col-md-4">
+									<div class="d-flex align-items-stretch justify-content-end pr-4">
+										<img src="./assets/images/aboutus.webp" class="card-img rounded-0"
+										     alt="Webtienao làm gì?">
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="template-4_notification mt-20px">
-							<div class="card border-0 rounded-lg shadow-sm bg-white">
-								<div class="card-header bg-transparent rounded-0 border-0">
-									<div class="card-title">
-										Đánh giá gần đây
-									</div>
+					<div class="template-4_exchange mt-20px">
+						<div class="card border-0 rounded-lg shadow-sm bg-white">
+							<div class="card-header bg-transparent rounded-0 border-0">
+								<div class="card-title">
+									Mua bán tiền ảo
 								</div>
-								<div class="card-body">
-									<ul class="list-unstyled mb-0">
-										<li class="notification-success">
-											<div class="title">
-												<i class="fas fa-check"></i>
-												Mua 60 USD => Techcombank (5)
+								<ul class="nav nav-tabs">
+									<li class="nav-item">
+										<a class="nav-link active" data-toggle="tab" href="#buy">Bán</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" data-toggle="tab" href="#sell">Mua</a>
+									</li>
+								</ul>
+							</div>
+							<div class="card-body">
+								<div class="tab-content">
+									<div class="tab-pane fade show active" id="buy">
+										<form action="">
+											<div class="form-group">
+												<label class="mr-sm-2">Coin muốn gửi</label>
+												<div class="input-group mb-3">
+													<div class="input-group-prepend">
+														<label class="input-group-text"><i
+																class="fab fa-bitcoin"></i></label>
+													</div>
+													<select name="" class="form-control">
+														<option value="">-- Chọn coin muốn gửi --</option>
+														<option value="">Bitcoin</option>
+														<option value="">Litecoin</option>
+														<option value="">Ethereum</option>
+														<option value="">USDT ERC20</option>
+														<option value="">Filecoin</option>
+														<option value="">USDT TRC20</option>
+														<option value="">USDT OMNI</option>
+														<option value="">Litecoin</option>
+													</select>
+												</div>
 											</div>
-											<div class="desc">
-												Dịch vụ cực kì tốt
+											<div class="form-group">
+												<label class="mr-sm-2">Ngân hàng muốn gửi</label>
+												<div class="input-group mb-3">
+													<div class="input-group-prepend">
+														<label class="input-group-text"><i
+																class="fas fa-university"></i></label>
+													</div>
+													<select name="" class="form-control">
+														<option value="">-- Chọn ngân hàng muốn gửi --</option>
+														<option value="">Đông Á</option>
+														<option value="">Maritime Bank</option>
+														<option value="">BIDV</option>
+														<option value="">MB Bank</option>
+														<option value="">Vietinbank</option>
+														<option value="">Á Châu</option>
+														<option value="">Nông nghiệp</option>
+														<option value="">Techcombank</option>
+													</select>
+												</div>
 											</div>
-										</li>
-										<li class="notification-success">
-											<div class="title">
-												<i class="fas fa-check"></i>
-												Mua 60 USD => Techcombank (5)
+											<div class="form-group">
+												<label class="mr-sm-2">Số coin bán</label>
+												<div class="input-group mb-3">
+													<input type="text" name="" class="form-control" placeholder="1 BTC">
+													<input type="text" name="" class="form-control"
+													       placeholder="1,525,666,249 VND">
+												</div>
 											</div>
-											<div class="desc">
-												Dịch vụ cực kì tốt
+											<div class="text-center mt-5">
+												<button class="btn btn-success template-4_btn">
+													Tiếp tục
+												</button>
 											</div>
-										</li>
-										<li class="notification-success">
-											<div class="title">
-												<i class="fas fa-check"></i>
-												Bán 100 USD => ATM - Banks khác
+										</form>
+									</div>
+									<div class="tab-pane fade" id="sell">
+										<form action="">
+											<div class="form-group">
+												<label class="mr-sm-2">Coin muốn bán</label>
+												<div class="input-group mb-3">
+													<div class="input-group-prepend">
+														<label class="input-group-text"><i
+																class="fab fa-bitcoin"></i></label>
+													</div>
+													<select name="" class="form-control">
+														<option value="">-- Chọn coin muốn bán --</option>
+														<option value="">Bitcoin</option>
+														<option value="">Litecoin</option>
+														<option value="">Ethereum</option>
+														<option value="">USDT ERC20</option>
+														<option value="">Filecoin</option>
+														<option value="">USDT TRC20</option>
+														<option value="">USDT OMNI</option>
+														<option value="">Litecoin</option>
+													</select>
+												</div>
 											</div>
-											<div class="desc">
-												Ối, giao dịch quá nhanh quá nguy hiểm
+											<div class="form-group">
+												<label class="mr-sm-2">Ngân hàng muốn gửi</label>
+												<div class="input-group mb-3">
+													<div class="input-group-prepend">
+														<label class="input-group-text"><i
+																class="fas fa-university"></i></label>
+													</div>
+													<select name="" class="form-control">
+														<option value="">-- Chọn ngân hàng muốn gửi --</option>
+														<option value="">Đông Á</option>
+														<option value="">Maritime Bank</option>
+														<option value="">BIDV</option>
+														<option value="">MB Bank</option>
+														<option value="">Vietinbank</option>
+														<option value="">Á Châu</option>
+														<option value="">Nông nghiệp</option>
+														<option value="">Techcombank</option>
+													</select>
+												</div>
 											</div>
-										</li>
-										<li class="notification-danger">
-											<div class="title">
-												<i class="fas fa-exclamation"></i>
-												Bán 100 USD => ATM - Banks khác
+											<div class="form-group">
+												<label class="mr-sm-2">Số coin bán</label>
+												<div class="input-group mb-3">
+													<input type="text" name="" class="form-control" placeholder="1 BTC">
+													<input type="text" name="" class="form-control"
+													       placeholder="1,525,666,249 VND">
+												</div>
 											</div>
-											<div class="desc">
-												Dịch vụ tốc độ quá chậm
+											<div class="text-center mt-5">
+												<button class="btn btn-success template-4_btn">
+													Tiếp tục
+												</button>
 											</div>
-										</li>
-									</ul>
+										</form>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -1078,9 +782,996 @@
 				</div>
 			</div>
 		</div>
+		<dov class="row row-10">
+			<div class="col-md-9">
+				<div class="template-4_table mt-20px">
+					<div class="card border-0 rounded-lg shadow-sm bg-white">
+						<div class="card-header bg-transparent rounded-0 border-0">
+							<div class="card-title">
+								Giao dịch gần đây
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+									<tr>
+										<th></th>
+										<th>Loại</th>
+										<th>Giá mua</th>
+										<th>Giá bán</th>
+										<th>Giá USDT</th>
+										<th>Biến động</th>
+										<th></th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td>
+											<div class="icon-circle background-red">
+												<i class="fal fa-long-arrow-down"></i>
+											</div>
+										</td>
+										<td>
+											<div class="name">
+												<img src="./assets/images/coin/bitcoin.png" alt="">
+												Bitcoin
+											</div>
+										</td>
+										<td>
+											1,436,316,628.70 <sup>đ</sup>
+										</td>
+										<td>
+											1,407,874,715.26 <sup>đ</sup>
+										</td>
+										<td>
+											56,896.3554 <sup>đ</sup>
+										</td>
+										<td>
+											<div class="color-red">
+												-0.057 %
+											</div>
+										</td>
+										<td>
+											<div class="d-flex align-items-center justify-content-center">
+												<button type="button" class="btn btn-sm btn-success bg-gradient">
+													Buy
+												</button>
+												<button type="button" class="btn btn-sm btn-secondary bg-gradient">
+													Sell
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="icon-circle background-green">
+												<i class="fal fa-long-arrow-up"></i>
+											</div>
+										</td>
+										<td>
+											<div class="name">
+												<img src="./assets/images/coin/dogecoin.png" alt="">
+												Dogcoin
+											</div>
+										</td>
+										<td>
+											7.062 <sup>đ</sup>
+										</td>
+										<td>
+											6.562 <sup>đ</sup>
+										</td>
+										<td>
+											56,896.3554 <sup>đ</sup>
+										</td>
+										<td>
+											<div class="color-green">
+												+1.057 %
+											</div>
+										</td>
+										<td>
+											<div class="d-flex align-items-center justify-content-center">
+												<button type="button" class="btn btn-sm btn-success bg-gradient">
+													Buy
+												</button>
+												<button type="button" class="btn btn-sm btn-secondary bg-gradient">
+													Sell
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="icon-circle background-red">
+												<i class="fal fa-long-arrow-down"></i>
+											</div>
+										</td>
+										<td>
+											<div class="name">
+												<img src="./assets/images/coin/bitcoin.png" alt="">
+												Bitcoin
+											</div>
+										</td>
+										<td>
+											1,436,316,628.70 <sup>đ</sup>
+										</td>
+										<td>
+											1,407,874,715.26 <sup>đ</sup>
+										</td>
+										<td>
+											56,896.3554 <sup>đ</sup>
+										</td>
+										<td>
+											<div class="color-red">
+												-0.057 %
+											</div>
+										</td>
+										<td>
+											<div class="d-flex align-items-center justify-content-center">
+												<button type="button" class="btn btn-sm btn-success bg-gradient">
+													Buy
+												</button>
+												<button type="button" class="btn btn-sm btn-secondary bg-gradient">
+													Sell
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="icon-circle background-green">
+												<i class="fal fa-long-arrow-up"></i>
+											</div>
+										</td>
+										<td>
+											<div class="name">
+												<img src="./assets/images/coin/dogecoin.png" alt="">
+												Dogcoin
+											</div>
+										</td>
+										<td>
+											7.062 <sup>đ</sup>
+										</td>
+										<td>
+											6.562 <sup>đ</sup>
+										</td>
+										<td>
+											56,896.3554 <sup>đ</sup>
+										</td>
+										<td>
+											<div class="color-green">
+												+1.057 %
+											</div>
+										</td>
+										<td>
+											<div class="d-flex align-items-center justify-content-center">
+												<button type="button" class="btn btn-sm btn-success bg-gradient">
+													Buy
+												</button>
+												<button type="button" class="btn btn-sm btn-secondary bg-gradient">
+													Sell
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="icon-circle background-red">
+												<i class="fal fa-long-arrow-down"></i>
+											</div>
+										</td>
+										<td>
+											<div class="name">
+												<img src="./assets/images/coin/bitcoin.png" alt="">
+												Bitcoin
+											</div>
+										</td>
+										<td>
+											1,436,316,628.70 <sup>đ</sup>
+										</td>
+										<td>
+											1,407,874,715.26 <sup>đ</sup>
+										</td>
+										<td>
+											56,896.3554 <sup>đ</sup>
+										</td>
+										<td>
+											<div class="color-red">
+												-0.057 %
+											</div>
+										</td>
+										<td>
+											<div class="d-flex align-items-center justify-content-center">
+												<button type="button" class="btn btn-sm btn-success bg-gradient">
+													Buy
+												</button>
+												<button type="button" class="btn btn-sm btn-secondary bg-gradient">
+													Sell
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="icon-circle background-green">
+												<i class="fal fa-long-arrow-up"></i>
+											</div>
+										</td>
+										<td>
+											<div class="name">
+												<img src="./assets/images/coin/dogecoin.png" alt="">
+												Dogcoin
+											</div>
+										</td>
+										<td>
+											7.062 <sup>đ</sup>
+										</td>
+										<td>
+											6.562 <sup>đ</sup>
+										</td>
+										<td>
+											56,896.3554 <sup>đ</sup>
+										</td>
+										<td>
+											<div class="color-green">
+												+1.057 %
+											</div>
+										</td>
+										<td>
+											<div class="d-flex align-items-center justify-content-center">
+												<button type="button" class="btn btn-sm btn-success bg-gradient">
+													Buy
+												</button>
+												<button type="button" class="btn btn-sm btn-secondary bg-gradient">
+													Sell
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="icon-circle background-red">
+												<i class="fal fa-long-arrow-down"></i>
+											</div>
+										</td>
+										<td>
+											<div class="name">
+												<img src="./assets/images/coin/bitcoin.png" alt="">
+												Bitcoin
+											</div>
+										</td>
+										<td>
+											1,436,316,628.70 <sup>đ</sup>
+										</td>
+										<td>
+											1,407,874,715.26 <sup>đ</sup>
+										</td>
+										<td>
+											56,896.3554 <sup>đ</sup>
+										</td>
+										<td>
+											<div class="color-red">
+												-0.057 %
+											</div>
+										</td>
+										<td>
+											<div class="d-flex align-items-center justify-content-center">
+												<button type="button" class="btn btn-sm btn-success bg-gradient">
+													Buy
+												</button>
+												<button type="button" class="btn btn-sm btn-secondary bg-gradient">
+													Sell
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="icon-circle background-green">
+												<i class="fal fa-long-arrow-up"></i>
+											</div>
+										</td>
+										<td>
+											<div class="name">
+												<img src="./assets/images/coin/dogecoin.png" alt="">
+												Dogcoin
+											</div>
+										</td>
+										<td>
+											7.062 <sup>đ</sup>
+										</td>
+										<td>
+											6.562 <sup>đ</sup>
+										</td>
+										<td>
+											56,896.3554 <sup>đ</sup>
+										</td>
+										<td>
+											<div class="color-green">
+												+1.057 %
+											</div>
+										</td>
+										<td>
+											<div class="d-flex align-items-center justify-content-center">
+												<button type="button" class="btn btn-sm btn-success bg-gradient">
+													Buy
+												</button>
+												<button type="button" class="btn btn-sm btn-secondary bg-gradient">
+													Sell
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="icon-circle background-red">
+												<i class="fal fa-long-arrow-down"></i>
+											</div>
+										</td>
+										<td>
+											<div class="name">
+												<img src="./assets/images/coin/bitcoin.png" alt="">
+												Bitcoin
+											</div>
+										</td>
+										<td>
+											1,436,316,628.70 <sup>đ</sup>
+										</td>
+										<td>
+											1,407,874,715.26 <sup>đ</sup>
+										</td>
+										<td>
+											56,896.3554 <sup>đ</sup>
+										</td>
+										<td>
+											<div class="color-red">
+												-0.057 %
+											</div>
+										</td>
+										<td>
+											<div class="d-flex align-items-center justify-content-center">
+												<button type="button" class="btn btn-sm btn-success bg-gradient">
+													Buy
+												</button>
+												<button type="button" class="btn btn-sm btn-secondary bg-gradient">
+													Sell
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="icon-circle background-green">
+												<i class="fal fa-long-arrow-up"></i>
+											</div>
+										</td>
+										<td>
+											<div class="name">
+												<img src="./assets/images/coin/dogecoin.png" alt="">
+												Dogcoin
+											</div>
+										</td>
+										<td>
+											7.062 <sup>đ</sup>
+										</td>
+										<td>
+											6.562 <sup>đ</sup>
+										</td>
+										<td>
+											56,896.3554 <sup>đ</sup>
+										</td>
+										<td>
+											<div class="color-green">
+												+1.057 %
+											</div>
+										</td>
+										<td>
+											<div class="d-flex align-items-center justify-content-center">
+												<button type="button" class="btn btn-sm btn-success bg-gradient">
+													Buy
+												</button>
+												<button type="button" class="btn btn-sm btn-secondary bg-gradient">
+													Sell
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="icon-circle background-red">
+												<i class="fal fa-long-arrow-down"></i>
+											</div>
+										</td>
+										<td>
+											<div class="name">
+												<img src="./assets/images/coin/bitcoin.png" alt="">
+												Bitcoin
+											</div>
+										</td>
+										<td>
+											1,436,316,628.70 <sup>đ</sup>
+										</td>
+										<td>
+											1,407,874,715.26 <sup>đ</sup>
+										</td>
+										<td>
+											56,896.3554 <sup>đ</sup>
+										</td>
+										<td>
+											<div class="color-red">
+												-0.057 %
+											</div>
+										</td>
+										<td>
+											<div class="d-flex align-items-center justify-content-center">
+												<button type="button" class="btn btn-sm btn-success bg-gradient">
+													Buy
+												</button>
+												<button type="button" class="btn btn-sm btn-secondary bg-gradient">
+													Sell
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="icon-circle background-green">
+												<i class="fal fa-long-arrow-up"></i>
+											</div>
+										</td>
+										<td>
+											<div class="name">
+												<img src="./assets/images/coin/dogecoin.png" alt="">
+												Dogcoin
+											</div>
+										</td>
+										<td>
+											7.062 <sup>đ</sup>
+										</td>
+										<td>
+											6.562 <sup>đ</sup>
+										</td>
+										<td>
+											56,896.3554 <sup>đ</sup>
+										</td>
+										<td>
+											<div class="color-green">
+												+1.057 %
+											</div>
+										</td>
+										<td>
+											<div class="d-flex align-items-center justify-content-center">
+												<button type="button" class="btn btn-sm btn-success bg-gradient">
+													Buy
+												</button>
+												<button type="button" class="btn btn-sm btn-secondary bg-gradient">
+													Sell
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="icon-circle background-red">
+												<i class="fal fa-long-arrow-down"></i>
+											</div>
+										</td>
+										<td>
+											<div class="name">
+												<img src="./assets/images/coin/bitcoin.png" alt="">
+												Bitcoin
+											</div>
+										</td>
+										<td>
+											1,436,316,628.70 <sup>đ</sup>
+										</td>
+										<td>
+											1,407,874,715.26 <sup>đ</sup>
+										</td>
+										<td>
+											56,896.3554 <sup>đ</sup>
+										</td>
+										<td>
+											<div class="color-red">
+												-0.057 %
+											</div>
+										</td>
+										<td>
+											<div class="d-flex align-items-center justify-content-center">
+												<button type="button" class="btn btn-sm btn-success bg-gradient">
+													Buy
+												</button>
+												<button type="button" class="btn btn-sm btn-secondary bg-gradient">
+													Sell
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="icon-circle background-green">
+												<i class="fal fa-long-arrow-up"></i>
+											</div>
+										</td>
+										<td>
+											<div class="name">
+												<img src="./assets/images/coin/dogecoin.png" alt="">
+												Dogcoin
+											</div>
+										</td>
+										<td>
+											7.062 <sup>đ</sup>
+										</td>
+										<td>
+											6.562 <sup>đ</sup>
+										</td>
+										<td>
+											56,896.3554 <sup>đ</sup>
+										</td>
+										<td>
+											<div class="color-green">
+												+1.057 %
+											</div>
+										</td>
+										<td>
+											<div class="d-flex align-items-center justify-content-center">
+												<button type="button" class="btn btn-sm btn-success bg-gradient">
+													Buy
+												</button>
+												<button type="button" class="btn btn-sm btn-secondary bg-gradient">
+													Sell
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="icon-circle background-red">
+												<i class="fal fa-long-arrow-down"></i>
+											</div>
+										</td>
+										<td>
+											<div class="name">
+												<img src="./assets/images/coin/bitcoin.png" alt="">
+												Bitcoin
+											</div>
+										</td>
+										<td>
+											1,436,316,628.70 <sup>đ</sup>
+										</td>
+										<td>
+											1,407,874,715.26 <sup>đ</sup>
+										</td>
+										<td>
+											56,896.3554 <sup>đ</sup>
+										</td>
+										<td>
+											<div class="color-red">
+												-0.057 %
+											</div>
+										</td>
+										<td>
+											<div class="d-flex align-items-center justify-content-center">
+												<button type="button" class="btn btn-sm btn-success bg-gradient">
+													Buy
+												</button>
+												<button type="button" class="btn btn-sm btn-secondary bg-gradient">
+													Sell
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="icon-circle background-green">
+												<i class="fal fa-long-arrow-up"></i>
+											</div>
+										</td>
+										<td>
+											<div class="name">
+												<img src="./assets/images/coin/dogecoin.png" alt="">
+												Dogcoin
+											</div>
+										</td>
+										<td>
+											7.062 <sup>đ</sup>
+										</td>
+										<td>
+											6.562 <sup>đ</sup>
+										</td>
+										<td>
+											56,896.3554 <sup>đ</sup>
+										</td>
+										<td>
+											<div class="color-green">
+												+1.057 %
+											</div>
+										</td>
+										<td>
+											<div class="d-flex align-items-center justify-content-center">
+												<button type="button" class="btn btn-sm btn-success bg-gradient">
+													Buy
+												</button>
+												<button type="button" class="btn btn-sm btn-secondary bg-gradient">
+													Sell
+												</button>
+											</div>
+										</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="template-4_notification mt-20px">
+					<div class="card border-0 rounded-lg shadow-sm bg-white">
+						<div class="card-header bg-transparent rounded-0 border-0">
+							<div class="card-title">
+								Đánh giá gần đây
+							</div>
+						</div>
+						<div class="card-body">
+							<ul class="list-unstyled mb-0">
+								<li class="notification-success">
+									<div class="title">
+										<i class="fas fa-check"></i>
+										Mua 60 USD => Techcombank (5)
+									</div>
+									<div class="desc">
+										Dịch vụ cực kì tốt
+									</div>
+								</li>
+								<li class="notification-success">
+									<div class="title">
+										<i class="fas fa-check"></i>
+										Mua 60 USD => Techcombank (5)
+									</div>
+									<div class="desc">
+										Dịch vụ cực kì tốt
+									</div>
+								</li>
+								<li class="notification-success">
+									<div class="title">
+										<i class="fas fa-check"></i>
+										Bán 100 USD => ATM - Banks khác
+									</div>
+									<div class="desc">
+										Ối, giao dịch quá nhanh quá nguy hiểm
+									</div>
+								</li>
+								<li class="notification-danger">
+									<div class="title">
+										<i class="fas fa-exclamation"></i>
+										Bán 100 USD => ATM - Banks khác
+									</div>
+									<div class="desc">
+										Dịch vụ tốc độ quá chậm
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</dov>
+		<dov class="row row-10">
+			<div class="col-md-6">
+				<div class="template-4_exchange mt-20px">
+					<div class="card border-0 rounded-lg shadow-sm bg-white">
+						<div class="card-header bg-transparent rounded-0 border-0">
+							<div class="card-title">
+								Chuyển tiền tiền tệ
+							</div>
+							<p class="mb-0">
+								USD, EUR, USDT, BTC, BCH, ETH, LTC, ERP, DOGE VÀ NHIỀU COIN ẢO KHÁC
+							</p>
+						</div>
+						<div class="card-body">
+							<form action="">
+								<div class="form-group">
+									<label class="mr-sm-2">Coin muốn đổi</label>
+									<div class="input-group mb-3">
+										<div class="input-group-prepend">
+											<label class="input-group-text"><i
+													class="fab fa-bitcoin"></i></label>
+										</div>
+										<select name="" class="form-control">
+											<option value="">-- Chọn coin muốn đổi --</option>
+											<option value="">Bitcoin</option>
+											<option value="">Litecoin</option>
+											<option value="">Ethereum</option>
+											<option value="">USDT ERC20</option>
+											<option value="">Filecoin</option>
+											<option value="">USDT TRC20</option>
+											<option value="">USDT OMNI</option>
+											<option value="">Litecoin</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="mr-sm-2">Coin muốn nhận</label>
+									<div class="input-group mb-3">
+										<div class="input-group-prepend">
+											<label class="input-group-text"><i
+													class="fas fa-university"></i></label>
+										</div>
+										<select name="" class="form-control">
+											<option value="">-- Chọn coin muốn nhận --</option>
+											<option value="">Bitcoin</option>
+											<option value="">Litecoin</option>
+											<option value="">Ethereum</option>
+											<option value="">USDT ERC20</option>
+											<option value="">Filecoin</option>
+											<option value="">USDT TRC20</option>
+											<option value="">USDT OMNI</option>
+											<option value="">Litecoin</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="mr-sm-2">Số coin chuyển đổi</label>
+									<div class="input-group mb-3">
+										<input type="text" name="" class="form-control"
+										       placeholder="1 Bitcoin">
+										<input type="text" name="" class="form-control"
+										       placeholder="25.03436170 ETH">
+									</div>
+								</div>
+								<div class="text-center mt-5">
+									<button class="btn btn-success template-4_btn">
+										Tiếp tục
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="template-4_exchange mt-20px">
+					<div class="card border-0 rounded-lg shadow-sm bg-white">
+						<div class="card-header bg-transparent rounded-0 border-0">
+							<div class="card-title">
+								Chuyển tiền liên ngân hàng
+							</div>
+							<p class="mb-0">
+								VCB, VTB, TECH, ACB, EAB, VIB, AGR, SCB, VPB, BIDV, MB VÀ NHIỀU BANK KHÁC
+							</p>
+						</div>
+						<div class="card-body">
+							<form action="">
+								<div class="form-group">
+									<label class="mr-sm-2">Chọn ngân hàng đổi</label>
+									<div class="input-group mb-3">
+										<div class="input-group-prepend">
+											<label class="input-group-text"><i
+													class="fab fa-bitcoin"></i></label>
+										</div>
+										<select name="" class="form-control">
+											<option value="">-- Chọn ngân hàng muốn đổi --</option>
+											<option value="">Đông Á</option>
+											<option value="">Maritime Bank</option>
+											<option value="">BIDV</option>
+											<option value="">MB Bank</option>
+											<option value="">Vietinbank</option>
+											<option value="">Á Châu</option>
+											<option value="">Nông nghiệp</option>
+											<option value="">Techcombank</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="mr-sm-2">Chọn Ngân hàng muốn nhân</label>
+									<div class="input-group mb-3">
+										<div class="input-group-prepend">
+											<label class="input-group-text"><i
+													class="fas fa-university"></i></label>
+										</div>
+										<select name="" class="form-control">
+											<option value="">-- Chọn ngân hàng muốn nhận --</option>
+											<option value="">Đông Á</option>
+											<option value="">Maritime Bank</option>
+											<option value="">BIDV</option>
+											<option value="">MB Bank</option>
+											<option value="">Vietinbank</option>
+											<option value="">Á Châu</option>
+											<option value="">Nông nghiệp</option>
+											<option value="">Techcombank</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="mr-sm-2">Số coin chuyển đổi</label>
+									<div class="input-group mb-3">
+										<input type="text" name="" class="form-control"
+										       placeholder="1.000.000 VNĐ">
+										<input type="text" name="" class="form-control"
+										       placeholder="1.000.000 VNĐ">
+									</div>
+								</div>
+								<div class="text-center mt-5">
+									<button class="btn btn-success template-4_btn">
+										Tiếp tục
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</dov>
 	</div>
 </div>
-<fooer class="template-4_footer"></fooer>
+<footer class="template-4_footer">
+	<div class="top-area">
+		<div class="container">
+			<div class="row">
+				<div class="col mt-4">
+					<div class="footer-inner">
+						<div class="footer-logo">
+							<a href="index.html" class="d-inline-block">
+								<img src="./assets/images/logo.png" alt="">
+							</a>
+						</div>
+						<div class="footer-heading">
+							Webtienao
+						</div>
+						<div class="footer-desc">
+							Phần mềm, ứng dụng di động, quản trị mạng
+						</div>
+					</div>
+				</div>
+				<div class="col mt-4">
+					<div class="footer-inner">
+						<div class="footer-title">
+							<span>Dịch vụ hot</span>
+						</div>
+						<div class="footer-list footer-link">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#">
+										<i class="fal fa-angle-right"></i>
+										Bán bitcoin
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fal fa-angle-right"></i>
+										Bán Eth
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fal fa-angle-right"></i>
+										Bán PerfectMoney
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col mt-4">
+					<div class="footer-inner">
+						<div class="footer-title">
+							<span>Hướng dẫn</span>
+						</div>
+						<div class="footer-list footer-link">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#">
+										<i class="fal fa-angle-right"></i>
+										Hướng dẫn bán
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fal fa-angle-right"></i>
+										Hướng dẫn mua
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fal fa-angle-right"></i>
+										Xác thức
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col mt-4">
+					<div class="footer-inner">
+						<div class="footer-title">
+							<span>Đối tác</span>
+						</div>
+						<div class="footer-list footer-image">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#">
+										<img src="./assets/images/v_blue_on_white_en.png" alt="">
+										2922xxxxxxxxx
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="./assets/images/pm.png" alt="">
+										2922xxxxxxxxx
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col mt-4">
+					<div class="footer-inner">
+						<div class="footer-title mb-3 ">
+							<span>Mạng xã hội</span>
+						</div>
+						<div class="footer-list footer-social">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="" class="facebook">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="twitter">
+										<i class="fab fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="youtube">
+										<i class="fab fa-youtube"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="telegram">
+										<i class="fab fa-telegram-plane"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-area">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-sm-6">
+					<div class="bottom-desc">
+						Phần mềm, ứng dụng di động, quản trị mạng
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="bottom-list">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="">
+									Japanese
+								</a>
+							</li>
+							<li>
+								<a href="">
+									English
+								</a>
+							</li>
+							<li>
+								<a href="" class="active">
+									Tiếng Việt
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
 
 <script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
 <script type="text/javascript" src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
