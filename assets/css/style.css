@@ -38,6 +38,22 @@ textarea:focus,
     outline: none !important;
 }
 
+.top-0 {
+    top: 0 !important;
+}
+
+.bottom-0 {
+    bottom: 0 !important
+}
+
+.right-0 {
+    right: 0 !important
+}
+
+.left-0 {
+    left: 0 !important;
+}
+
 .row.row-10 {
     margin-left: -10px;
     margin-right: -10px;
@@ -181,8 +197,33 @@ textarea:focus,
     -webkit-transition: .3s opacity ease-in-out, .3s top ease-in-out;
     width: 200px;
     background-color: #fff;
-    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+    box-shadow: 0 .45rem 1rem rgba(0, 0, 0, .275) !important;
     z-index: 10;
+    border: 1px solid var(--color-border);
+    border-radius: .2rem;
+}
+
+.template-4_header .navigation-area > ul > li > ul:before,
+.template-4_header .navigation-area > ul > li > ul:after {
+    content: "";
+    display: block;
+    position: absolute;
+    font-size: 1.4em;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    top: -10px;
+    left: 10px;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+
+.template-4_header .navigation-area > ul > li > ul:before {
+    border-bottom: 10px solid #a9a9a9;
+}
+
+.template-4_header .navigation-area > ul > li > ul::after {
+    border-bottom: 10px solid #fff;
 }
 
 .template-4_header .navigation-area > ul > li > ul > li > a {
@@ -376,7 +417,7 @@ textarea:focus,
 .template-4_exchange .card .card-header .nav-tabs .nav-item .nav-link {
     padding: 7px 30px;
     border-radius: .35rem;
-    color: var(--text-dark);
+    color: var(--bg-white);
     font-weight: 500;
     border: 1px solid transparent;
     box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, .125);
@@ -391,10 +432,20 @@ textarea:focus,
     margin-right: 15px;
 }
 
+.template-4_exchange .card .card-header .nav-tabs .nav-item .nav-link.tab-buy {
+    background-color: var(--color-hover);
+    border-color: var(--color-hover);
+}
+
+.template-4_exchange .card .card-header .nav-tabs .nav-item .nav-link.tab-sell {
+    background-color: var(--color-red);
+    border-color: var(--color-red);
+}
+
 .template-4_exchange .card .card-header .nav-tabs .nav-item .nav-link.active {
     box-shadow: none;
-    background-color: var(--opacity-color-main);
-    border-color: var(--color-hover);
+    transform: translateY(-2px);
+    opacity: .8;
 }
 
 .template-4_exchange .card .card-body .form-group {
@@ -404,7 +455,7 @@ textarea:focus,
 .template-4_exchange .card .card-body .form-group > label {
     font-size: 1.10em;
     font-weight: 500;
-    color: var(--text-dark);
+    color: var(--text-gray);
     margin-bottom: 15px;
     background: transparent;
     border-color: rgba(55, 55, 89, 0.1);
@@ -413,10 +464,24 @@ textarea:focus,
 .template-4_exchange .card .card-body .form-group .input-group .input-group-prepend .input-group-text {
     background-color: #fff;
     margin-bottom: 0 !important;
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 5px 15px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+}
+
+.template-4_exchange .card .card-body .form-group .input-group .input-group-append .input-group-text {
+    background-color: #fff;
+    margin-bottom: 0 !important;
+    font-size: 1em;
+    padding: 5px 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.template-4_exchange .card .card-body .form-group .input-group .input-group-append .input-group-text,
+.template-4_exchange .card .card-body .form-group .input-group .input-group-prepend .input-group-text i {
+    font-size: 1.4em;
 }
 
 .template-4_exchange .card .card-body .form-group .input-group .form-control {
@@ -431,12 +496,16 @@ textarea:focus,
     background: var(--bg-main);
 }
 
+.template-4_exchange .card .card-body .form-group .input-group .form-control::placeholder {
+    color: var(--text-dark);
+}
+
 .template-4_exchange .card .card-body .form-group .input-group .form-control:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
 
-.template-4_exchange .card .card-body .form-group .input-group .form-control:not(:last-of-type) {
+.template-4_exchange .card .card-body .form-group .input-group .form-control:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -469,10 +538,10 @@ textarea:focus,
 .template-4_sidebar .sidebar-item .card .card-header .nav-tabs .nav-item .nav-link {
     padding: 2px 12px;
     border-radius: .35rem;
-    color: var(--text-dark);
+    color: #fff;
     font-weight: 500;
     border: 1px solid transparent;
-    box-shadow: 0 0.5rem .6rem rgba(0, 0, 0, .125);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .225);
     position: relative;
     transition: .3s all ease-in-out;
     background-color: #fff;
@@ -481,13 +550,23 @@ textarea:focus,
 }
 
 .template-4_sidebar .sidebar-item .card .card-header .nav-tabs .nav-item:not(:last-of-type) {
-    margin-right: 5px;
+    margin-right: 8px;
+}
+
+.template-4_sidebar .sidebar-item .card .card-header .nav-tabs .nav-item .nav-link.tab-buy {
+    background-color: var(--color-hover);
+    border-color: var(--color-hover);
+}
+
+.template-4_sidebar .sidebar-item .card .card-header .nav-tabs .nav-item .nav-link.tab-sell {
+    background-color: var(--color-red);
+    border-color: var(--color-red);
 }
 
 .template-4_sidebar .sidebar-item .card .card-header .nav-tabs .nav-item .nav-link.active {
     box-shadow: none;
-    background-color: var(--opacity-color-main);
-    border-color: var(--color-hover);
+    transform: translateY(-2px);
+    opacity: .8;
 }
 
 .template-4_sidebar .sidebar-item .card .card-body {
@@ -589,6 +668,7 @@ textarea:focus,
     border-collapse: separate;
     white-space: nowrap;
     font-size: 1em;
+    margin-bottom: 0;
 }
 
 .template-4_table .card .card-body table thead tr {
@@ -937,4 +1017,97 @@ textarea:focus,
 .template-4_footer .bottom-area .bottom-list ul li:hover a {
     color: var(--bg-white);
     text-decoration: underline;
+}
+
+.template-4_modal .modal .modal-header {
+    background: var(--color-main);
+    color: #fff;
+    padding: 12px 1rem;
+}
+
+.template-4_modal .modal .modal-header > a {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0.8;
+}
+
+.template-4_modal .modal .modal-header .modal-title {
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.form-floating {
+    position: relative;
+}
+
+.form-floating > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 1rem .75rem;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: opacity .1s ease-in-out, transform .1s ease-in-out;
+}
+
+.form-floating > .form-control::-moz-placeholder {
+    color: transparent;
+}
+
+.form-floating > .form-control::placeholder {
+    color: transparent;
+}
+
+.form-floating > .form-control:not(textarea), .form-floating > .form-select {
+    height: calc(3.5rem + 2px);
+    padding: 1rem .75rem;
+}
+
+.form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown) {
+    padding-top: 1.625rem;
+    padding-bottom: .625rem;
+}
+
+.form-floating > .form-control:-webkit-autofill {
+    padding-top: 1.625rem;
+    padding-bottom: .625rem;
+}
+
+.form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-select ~ label {
+    opacity: .65;
+    transform: scale(.85) translateY(-.5rem) translateX(.15rem);
+}
+
+.form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-select ~ label {
+    opacity: .65;
+    transform: scale(.85) translateY(-.5rem) translateX(.15rem);
+}
+
+.template-4_toast .toast {
+    min-width: 200px;
+}
+
+.template-4_toast .toast .toast-icon {
+    font-size: 1.3em;
+    position: relative;
+    top: 1px;
+}
+
+.template-4_toast .toast .close {
+    font-size: 1.2em;
+    opacity: 1;
+    text-shadow: none;
+    color: var(--text-gray-50);
+}
+
+.template-4_toast .toast .close:hover {
+    color: #fff;
 }
