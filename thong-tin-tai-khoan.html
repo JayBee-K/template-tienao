@@ -1,0 +1,1290 @@
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
+	
+	<meta itemprop="name" content="">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+	
+	<meta property="og:locale" content="">
+	<meta property="og:type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	
+	<meta name="twitter:card" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:creator" content="">
+	
+	<title>Home - Template Topup</title>
+	
+	<link rel="stylesheet" href="./assets/plugin/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugin/swiper/swiper.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/plugin/animate.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	
+	<style>
+		:root {
+			--color-main: #3E7D37;
+			--color-hover: #5cb85c;
+			--opacity-color-main: #5cb85c45;
+			--color-main-2: #F59C00;
+			--color-hover-2: #ffb12b;
+			--color-border: #e9e9e9;
+			--color-red: #cb2b0e;
+			--bg-main: #f6f8fe;
+			--bg-light: #F7F7F7;
+			--bg-white: #fff;
+			--text-dark: #343a40;
+			--text-dark-50: #464748;
+			--text-gray: #6c757d;
+			--text-gray-50: #a4a9ae;
+		}
+	
+	</style>
+</head>
+<body>
+
+<div class="template-4_modal">
+	<div class="modal fade" tabindex="-1" id="modalLogin">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header position-relative justify-content-center bg-gradient">
+					<a href="javascript:void(0)" data-dismiss="modal" class="text-white">Đóng</a>
+					<div class="modal-title">Đăng nhập</div>
+				</div>
+				<div class="modal-body p-3 bg-light">
+					<div class="bg-white border shadow-sm p-3">
+						<form action="" class="mb-0">
+							<div class="mb-3">
+								<div class="form-floating">
+									<input type="text" autocomplete="off" placeholder="Không được bỏ trống"
+									       class="form-control">
+									<label for="" class="form-label">Tên đăng nhập/email</label>
+								</div>
+							</div>
+							<div class="mb-3">
+								<div class="form-floating">
+									<input type="password" autocomplete="off" placeholder="Không được bỏ trống"
+									       class="form-control">
+									<label for="" class="form-label">Mật khẩu</label>
+								</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-md-6">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+										<label class="form-check-label" for="defaultCheck1">
+											Lưu mật khẩu
+										</label>
+									</div>
+								</div>
+								<div class="col-md-6 text-right">
+									<a href="javascript:void(0)" data-modal="modalForgot" class="callModal">Quên mật
+										khẩu</a>
+								</div>
+							</div>
+							<div class="text-center">
+								<button type="submit" class="btn btn-success bg-gradient">
+									<span>Đăng nhập</span>
+								</button>
+							</div>
+							<div class="text-center mt-4 text-muted">
+								Chưa phải thành viên? <a href="javascript:void(0)" data-modal="modalRegister"
+								                         class="callModal font-weight-bold">Click vào đây để đăng ký</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="modalRegister">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header position-relative justify-content-center bg-gradient">
+					<a href="javascript:void(0)" data-dismiss="modal" class="text-white">Đóng</a>
+					<div class="modal-title">Đăng ký tài khoản</div>
+				</div>
+				<div class="modal-body p-3 bg-light">
+					<div class="bg-white border shadow-sm p-3">
+						<form action="" class="mb-0">
+							<div class="mb-3">
+								<div class="form-floating">
+									<input type="text" autocomplete="off" placeholder="Không được bỏ trống"
+									       class="form-control">
+									<label for="" class="form-label">Tên đăng nhập/email</label>
+								</div>
+							</div>
+							<div class="mb-3">
+								<div class="form-floating">
+									<input type="password" autocomplete="off" placeholder="Không được bỏ trống"
+									       class="form-control">
+									<label for="" class="form-label">Mật khẩu</label>
+								</div>
+							</div>
+							<div class="mb-3">
+								<div class="form-floating">
+									<input type="password" autocomplete="off" placeholder="Không được bỏ trống"
+									       class="form-control">
+									<label for="" class="form-label">Nhập lại mật khẩu</label>
+								</div>
+							</div>
+							<div class="text-center">
+								<button type="submit" class="btn btn-success bg-gradient">
+									<span>Đăng nhập</span>
+								</button>
+							</div>
+							<div class="text-center mt-4 text-muted">
+								Đã có tài khoản? <a href="javascript:void(0)" data-modal="modalLogin"
+								                    class="callModal font-weight-bold">Click vào đây để đăng nhập</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="modalForgot">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header position-relative justify-content-center bg-gradient">
+					<a href="javascript:void(0)" data-dismiss="modal" class="text-white">Đóng</a>
+					<div class="modal-title">Quên mật khẩu</div>
+				</div>
+				<div class="modal-body p-3 bg-light">
+					<div class="bg-white border shadow-sm p-3">
+						<form action="" class="mb-0">
+							<div class="mb-3">
+								<div class="form-floating">
+									<input type="text" autocomplete="off" placeholder="Không được bỏ trống"
+									       class="form-control">
+									<label for="" class="form-label">Email</label>
+								</div>
+							</div>
+							<div class="text-center">
+								<button type="submit" class="btn btn-success bg-gradient">
+									<span>Quên mật khẩu</span>
+								</button>
+							</div>
+							<div class="text-center mt-4 text-muted">
+								Chưa phải thành viên? <a href="javascript:void(0)" data-modal="modalRegister"
+								                         class="callModal font-weight-bold">Click vào đây để đăng ký</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<header class="template-4_header">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-2">
+				<div class="logo-area">
+					<a href="index.html" class="d-inline-block">
+						<img src="./assets/images/logo.png" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-8">
+				<div class="navigation-area">
+					<ul class="list-unstyled mb-0">
+						<li>
+							<a href="#">
+								Bán USDT
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								MUA USDT
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Chuyển đổi
+								<i class="fal fa-angle-down"></i>
+							</a>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#">
+										Chuyển đổi coin
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Chuyển đổi ngân hàng
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								Binace trade
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Binance API
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Cảnh báo giá
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Tin tức
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="action-area">
+					<ul class="list-unstyled mb-0">
+						<li class="language">
+							<a href="javascript:void(0)">
+								<img src="./assets/images/language/vi.png" alt="">
+							</a>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:void(0)">
+										<span>
+											<img src="./assets/images/language/vi.png" alt="">
+											Tiếng Việt
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<span>
+											<img src="./assets/images/language/en.png" alt="">
+											Tiếng Anh
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<span>
+											<img src="./assets/images/language/japan.png" alt="">
+											Tiếng Nhật
+										</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="login">
+							<a href="#modalLogin" data-toggle="modal">
+								Đăng nhập
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="template-4_main">
+	<div class="container">
+		<div class="row row-10">
+			<div class="col-md-3 mt-20px mt-md-0">
+				<div class="template-4_sidebar" id="changeHeightSidebar">
+					<div class="sidebar-item">
+						<div class="card rounded-lg shadow-sm bg-white">
+							<div class="card-header bg-transparent rounded-0 border-0">
+								<div class="card-title">
+									Bạn muốn
+									<ul class="nav nav-tabs">
+										<li class="nav-item">
+											<a class="nav-link tab-buy active" data-toggle="tab"
+											   href="#sidebar-buy">Bán</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link tab-sell" data-toggle="tab" href="#sidebar-sell">Mua</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="tab-content">
+									<div class="tab-pane fade show active" id="sidebar-buy">
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/bitcoin.png" alt="">
+														Bitcoin
+													</div>
+													<div class="price text-success">
+														1.482.167.708 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/etherum.png" alt="">
+														Ethereum
+													</div>
+													<div class="price text-success">
+														58.529.184 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/usdt.png" alt="">
+														USDT ERC20
+													</div>
+													<div class="price text-success">
+														24.347 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/fil.png" alt="">
+														Filecoin
+													</div>
+													<div class="price text-success">
+														4.633.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/riple.png" alt="">
+														Ripple
+													</div>
+													<div class="price text-success">
+														38.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/bitcoin.png" alt="">
+														Bitcoin
+													</div>
+													<div class="price text-success">
+														1.482.167.708 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/etherum.png" alt="">
+														Ethereum
+													</div>
+													<div class="price text-success">
+														58.529.184 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/usdt.png" alt="">
+														USDT ERC20
+													</div>
+													<div class="price text-success">
+														24.347 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/fil.png" alt="">
+														Filecoin
+													</div>
+													<div class="price text-success">
+														4.633.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/riple.png" alt="">
+														Ripple
+													</div>
+													<div class="price text-success">
+														38.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/dogecoin.png" alt="">
+														Dogecoin
+													</div>
+													<div class="price text-success">
+														6.562 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/btcst.png" alt="">
+														BTCST
+													</div>
+													<div class="price text-success">
+														1.964.911 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/bitcoin.png" alt="">
+														Bitcoin
+													</div>
+													<div class="price text-success">
+														1.482.167.708 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/etherum.png" alt="">
+														Ethereum
+													</div>
+													<div class="price text-success">
+														58.529.184 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/usdt.png" alt="">
+														USDT ERC20
+													</div>
+													<div class="price text-success">
+														24.347 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/fil.png" alt="">
+														Filecoin
+													</div>
+													<div class="price text-success">
+														4.633.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/riple.png" alt="">
+														Ripple
+													</div>
+													<div class="price text-success">
+														38.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/dogecoin.png" alt="">
+														Dogecoin
+													</div>
+													<div class="price text-success">
+														6.562 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/btcst.png" alt="">
+														BTCST
+													</div>
+													<div class="price text-success">
+														1.964.911 đ
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="tab-pane fade" id="sidebar-sell">
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/bitcoin.png" alt="">
+														Bitcoin
+													</div>
+													<div class="price text-success">
+														1.482.167.708 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/etherum.png" alt="">
+														Ethereum
+													</div>
+													<div class="price text-success">
+														58.529.184 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/usdt.png" alt="">
+														USDT ERC20
+													</div>
+													<div class="price text-success">
+														24.347 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/fil.png" alt="">
+														Filecoin
+													</div>
+													<div class="price text-success">
+														4.633.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/riple.png" alt="">
+														Ripple
+													</div>
+													<div class="price text-success">
+														38.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/bitcoin.png" alt="">
+														Bitcoin
+													</div>
+													<div class="price text-success">
+														1.482.167.708 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/etherum.png" alt="">
+														Ethereum
+													</div>
+													<div class="price text-success">
+														58.529.184 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/usdt.png" alt="">
+														USDT ERC20
+													</div>
+													<div class="price text-success">
+														24.347 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/fil.png" alt="">
+														Filecoin
+													</div>
+													<div class="price text-success">
+														4.633.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/riple.png" alt="">
+														Ripple
+													</div>
+													<div class="price text-success">
+														38.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/dogecoin.png" alt="">
+														Dogecoin
+													</div>
+													<div class="price text-success">
+														6.562 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/btcst.png" alt="">
+														BTCST
+													</div>
+													<div class="price text-success">
+														1.964.911 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/bitcoin.png" alt="">
+														Bitcoin
+													</div>
+													<div class="price text-success">
+														1.482.167.708 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/etherum.png" alt="">
+														Ethereum
+													</div>
+													<div class="price text-success">
+														58.529.184 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/usdt.png" alt="">
+														USDT ERC20
+													</div>
+													<div class="price text-success">
+														24.347 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/fil.png" alt="">
+														Filecoin
+													</div>
+													<div class="price text-success">
+														4.633.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/riple.png" alt="">
+														Ripple
+													</div>
+													<div class="price text-success">
+														38.365 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/dogecoin.png" alt="">
+														Dogecoin
+													</div>
+													<div class="price text-success">
+														6.562 đ
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="" class="d-flex align-items-center justify-content-between">
+													<div class="text">
+														<img src="./assets/images/coin/btcst.png" alt="">
+														BTCST
+													</div>
+													<div class="price text-success">
+														1.964.911 đ
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="template-4_information">
+					<div class="card shadow-sm rounded-lg bg-white">
+						<div class="card-header bg-transparent rounded-0 border-0">
+							<div class="card-title">
+								Thông tin tài khoản
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="information-view" id="informationView">
+								<div class="information-list">
+									<div class="row no-gutters pb-3 mb-3">
+										<div class="col-md-4">
+											Tên đăng nhập
+										</div>
+										<div class="col-md-8">
+											<b>abcxyz@gmail.com</b>
+										</div>
+									</div>
+									<div class="row no-gutters pb-3 mb-3">
+										<div class="col-md-4">
+											Họ và tên:
+										</div>
+										<div class="col-md-8">
+											<b>Hoàng Tấn</b>
+										</div>
+									</div>
+									<div class="row no-gutters pb-3 mb-3">
+										<div class="col-md-4">
+											Email
+										</div>
+										<div class="col-md-8">
+											<b>abcxyz@gmail.com</b>
+										</div>
+									</div>
+									<div class="row no-gutters pb-3 mb-3">
+										<div class="col-md-4">
+											Nhóm
+										</div>
+										<div class="col-md-8">
+											<b>Thành viên</b>
+										</div>
+									</div>
+									<div class="row no-gutters pb-3 mb-3">
+										<div class="col-md-4">
+											Xác thực điện thoại:
+										</div>
+										<div class="col-md-8">
+											<label for="" class="badge badge-danger">
+												Chưa xác thực
+											</label>
+										</div>
+									</div>
+									<div class="row no-gutters pb-3 mb-3">
+										<div class="col-md-4">
+											Xác thực Email:
+										</div>
+										<div class="col-md-8">
+											<label for="" class="badge badge-success">
+												Đã xác thực
+											</label>
+										</div>
+									</div>
+									<div class="row no-gutters pb-3 mb-3">
+										<div class="col-md-4">
+											Xác thực giấy tờ:
+										</div>
+										<div class="col-md-8">
+											<label for="" class="badge badge-warning">
+												Đang xác thực
+											</label>
+										</div>
+									</div>
+									<div class="row no-gutters pb-3 mb-3">
+										<div class="col-md-4">
+											Ngày đăng ký:
+										</div>
+										<div class="col-md-8">
+											<b>2021-04-14 17:05:11</b>
+										</div>
+									</div>
+									<div class="row no-gutters pb-3 mb-3">
+										<div class="col-md-4">
+											Ví điện tử:
+										</div>
+										<div class="col-md-8">
+											<b>0032164008</b>
+											- Số tiền: <b class="color-green">0 <sup>đ</sup></b>
+										</div>
+									</div>
+								</div>
+								<div class="mt-5 pt-4 border-top text-left">
+									<button class="btn btn-primary btn-sm bg-gradient updateInformation" data-form="0">
+										Sửa thông
+										tin
+									</button>
+									<button class="btn btn-secondary btn-sm updateInformation" data-form="1">Đổi mật
+										khẩu
+									</button>
+								</div>
+							</div>
+							<div class="information-form" style="display: none" id="informationFrom">
+								<form action="">
+									<div class="row align-items-center no-gutters pb-3 mb-3">
+										<div class="col-md-4">
+											<label for="user" class="mb-0 font-weight-bold">
+												Tên đăng nhập
+											</label>
+										</div>
+										<div class="col-md-8">
+											<div class="form-group mb-0">
+												<input type="text" readonly class="form-control" id="user"
+												       placeholder="abcxyz@gmail.com">
+											</div>
+										</div>
+									</div>
+									<div class="row align-items-center no-gutters pb-3 mb-3">
+										<div class="col-md-4">
+											<label for="fullname" class="mb-0 font-weight-bold">
+												Họ & tên
+											</label>
+										</div>
+										<div class="col-md-8">
+											<div class="form-group mb-0">
+												<input type="text" class="form-control" id="fullname"
+												       placeholder="Hoàng Tấn">
+											</div>
+										</div>
+									</div>
+									<div class="row align-items-center no-gutters pb-3 mb-3">
+										<div class="col-md-4">
+											<label for="email" class="mb-0 font-weight-bold">
+												Email đăng nhập
+											</label>
+										</div>
+										<div class="col-md-8">
+											<div class="form-group mb-0">
+												<input type="email" readonly class="form-control" id="email"
+												       placeholder="abcxyz@gmail.com">
+											</div>
+										</div>
+									</div>
+									<div class="row align-items-center no-gutters pb-3 mb-3">
+										<div class="col-md-4">
+											<label for="phone" class="mb-0 font-weight-bold">
+												Số điện thoại
+											</label>
+										</div>
+										<div class="col-md-8">
+											<div class="form-group mb-0">
+												<input type="tel" class="form-control" id="phone"
+												       placeholder="">
+											</div>
+										</div>
+									</div>
+									<div class="row align-items-center no-gutters pb-3 mb-3">
+										<div class="col-md-4">
+											<label for="" class="mb-0 font-weight-bold">
+												Giới tính
+											</label>
+										</div>
+										<div class="col-md-8">
+											<div class="form-group mb-0">
+												<div class="custom-control custom-radio custom-control-inline">
+													<input type="radio" id="sex01" name="sex"
+													       class="custom-control-input">
+													<label class="custom-control-label" for="sex01">Nam</label>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<input type="radio" id="sex02" name="sex"
+													       class="custom-control-input">
+													<label class="custom-control-label" for="sex02">Nữ</label>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<input type="radio" id="sex03" name="sex"
+													       class="custom-control-input">
+													<label class="custom-control-label" for="sex03">Không khai
+														báo</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row align-items-center no-gutters pb-3 mb-3">
+										<div class="col-md-4">
+											<label for="language" class="mb-0 font-weight-bold">
+												Ngôn ngữ
+											</label>
+										</div>
+										<div class="col-md-8">
+											<div class="form-group mb-0">
+												<select name="" class="form-control" id="language">
+													<option value="">--- Chọn ngôn ngữ ---</option>
+													<option value="">Tiếng việt</option>
+													<option value="">Tiếng Anh</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="row align-items-center no-gutters pb-3 mb-3">
+										<div class="col-md-4">
+											<label for="country" class="mb-0 font-weight-bold">
+												Quốc gia
+											</label>
+										</div>
+										<div class="col-md-8">
+											<div class="form-group mb-0">
+												<select name="" class="form-control" id="country">
+													<option value="" selected>Việt Nam</option>
+													<option value="">Nhật Bản</option>
+													<option value="">Trung Quốc</option>
+													<option value="">Nhật Bản</option>
+													<option value="">Trung Quốc</option>
+													<option value="">Nhật Bản</option>
+													<option value="">Trung Quốc</option>
+													<option value="">Nhật Bản</option>
+													<option value="">Trung Quốc</option>
+													<option value="">Nhật Bản</option>
+													<option value="">Trung Quốc</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="row align-items-center no-gutters pb-3 mb-3">
+										<div class="col-md-4">
+											<label for="password02" class="mb-0 font-weight-bold">
+												Mạt khẩu cấp 2
+											</label>
+										</div>
+										<div class="col-md-8">
+											<div class="form-group mb-0">
+												<input type="password" class="form-control" id="password02"
+												       placeholder="">
+											</div>
+										</div>
+									</div>
+									<div class="mt-5 pt-4 border-top text-left">
+										<button class="btn btn-success btn-sm bg-gradient">Cập nhật thông tin</button>
+										<button type="reset" class="btn btn-secondary btn-sm">Nhập lại</button>
+										<button type="button"
+										        class="float-right text-muted btn btn-link btn-sm updateInformation"
+										        data-form="2">Quay lại
+										</button>
+									</div>
+								</form>
+							</div>
+							<div class="information-form" style="display: none" id="passwordFrom">
+								<form action="">
+									<div class="row align-items-center no-gutters pb-3 mb-3">
+										<div class="col-md-4">
+											<label for="passwordold" class="mb-0 font-weight-bold">
+												Mạt khẩu cũ
+											</label>
+										</div>
+										<div class="col-md-8">
+											<div class="form-group mb-0">
+												<input type="password" class="form-control" id="passwordold"
+												       placeholder="">
+											</div>
+										</div>
+									</div>
+									<div class="row align-items-center no-gutters pb-3 mb-3">
+										<div class="col-md-4">
+											<label for="passwordnew" class="mb-0 font-weight-bold">
+												Mật khẩu mới
+											</label>
+										</div>
+										<div class="col-md-8">
+											<div class="form-group mb-0">
+												<input type="password" class="form-control" id="passwordnew"
+												       placeholder="">
+											</div>
+										</div>
+									</div>
+									<div class="row align-items-center no-gutters pb-3 mb-3">
+										<div class="col-md-4">
+											<label for="confirmpasswordnew" class="mb-0 font-weight-bold">
+												Nhập lại mật khẩu mới
+											</label>
+										</div>
+										<div class="col-md-8">
+											<div class="form-group mb-0">
+												<input type="password" class="form-control" id="confirmpasswordnew"
+												       placeholder="">
+											</div>
+										</div>
+									</div>
+									<div class="mt-5 pt-4 border-top text-left">
+										<button class="btn btn-success btn-sm bg-gradient">Cập nhật mật khẩu</button>
+										<button type="reset" class="btn btn-secondary btn-sm">Nhập lại</button>
+										<button type="button"
+										        class="float-right text-muted btn btn-link btn-sm updateInformation"
+										        data-form="2">Quay lại
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="loading-pure" style="display: none">
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+					</div>
+				</div>
+				<div class="template-4_table mt-20px">
+					<div class="card rounded-lg shadow-sm bg-white">
+						<div class="card-header bg-transparent rounded-0 border-0">
+							<div class="card-title">
+								Lịch sử đăng nhập
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+									<tr>
+										<th>IP</th>
+										<th>Ngày tạo</th>
+										<th>Trình duyệt</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td>14.237.30.129</td>
+										<td>2021-04-22 11:12:18</td>
+										<td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+											Gecko) Chrome/90.0.4430.85 Safari/537.36
+										</td>
+									</tr>
+									<tr>
+										<td>14.237.30.129</td>
+										<td>2021-04-22 11:12:18</td>
+										<td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+											Gecko) Chrome/90.0.4430.85 Safari/537.36
+										</td>
+									</tr>
+									<tr>
+										<td>14.237.30.129</td>
+										<td>2021-04-22 11:12:18</td>
+										<td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+											Gecko) Chrome/90.0.4430.85 Safari/537.36
+										</td>
+									</tr>
+									<tr>
+										<td>14.237.30.129</td>
+										<td>2021-04-22 11:12:18</td>
+										<td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+											Gecko) Chrome/90.0.4430.85 Safari/537.36
+										</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="template-4_footer">
+	<div class="top-area">
+		<div class="container">
+			<div class="row">
+				<div class="col mt-4">
+					<div class="footer-inner">
+						<div class="footer-logo">
+							<a href="index.html" class="d-inline-block">
+								<img src="./assets/images/logo.png" alt="">
+							</a>
+						</div>
+						<div class="footer-heading">
+							Webtienao
+						</div>
+						<div class="footer-desc">
+							Phần mềm, ứng dụng di động, quản trị mạng
+						</div>
+					</div>
+				</div>
+				<div class="col mt-4">
+					<div class="footer-inner">
+						<div class="footer-title">
+							<span>Dịch vụ hot</span>
+						</div>
+						<div class="footer-list footer-link">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#">
+										<i class="fal fa-angle-right"></i>
+										Bán bitcoin
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fal fa-angle-right"></i>
+										Bán Eth
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fal fa-angle-right"></i>
+										Bán PerfectMoney
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col mt-4">
+					<div class="footer-inner">
+						<div class="footer-title">
+							<span>Hướng dẫn</span>
+						</div>
+						<div class="footer-list footer-link">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#">
+										<i class="fal fa-angle-right"></i>
+										Hướng dẫn bán
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fal fa-angle-right"></i>
+										Hướng dẫn mua
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fal fa-angle-right"></i>
+										Xác thức
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col mt-4">
+					<div class="footer-inner">
+						<div class="footer-title">
+							<span>Đối tác</span>
+						</div>
+						<div class="footer-list footer-image">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#">
+										<img src="./assets/images/v_blue_on_white_en.png" alt="">
+										2922xxxxxxxxx
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="./assets/images/pm.png" alt="">
+										2922xxxxxxxxx
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col mt-4">
+					<div class="footer-inner">
+						<div class="footer-title mb-3 ">
+							<span>Mạng xã hội</span>
+						</div>
+						<div class="footer-list footer-social">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="" class="facebook">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="twitter">
+										<i class="fab fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="youtube">
+										<i class="fab fa-youtube"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="telegram">
+										<i class="fab fa-telegram-plane"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-area">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-sm-6">
+					<div class="bottom-desc">
+						Phần mềm, ứng dụng di động, quản trị mạng
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="bottom-list">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="">
+									Japanese
+								</a>
+							</li>
+							<li>
+								<a href="">
+									English
+								</a>
+							</li>
+							<li>
+								<a href="" class="active">
+									Tiếng Việt
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugin/swiper/swiper.js"></script>
+<script type="text/javascript" src="./assets/js/theme-script.js"></script>
+
+</body>
+</html>

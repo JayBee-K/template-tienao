@@ -120,4 +120,31 @@ $(document).ready(function () {
 		
 		$('.result-coin').val(formatPrice(coin_convert, '₫'));
 	});
+	
+	$('.updateInformation').click(function () {
+		fnUpdateInformation($(this).data('form'));
+	});
 });
+
+var fnUpdateInformation = function (form) {
+	// form == 0 : form cập nhật thông tin tài hoản
+	// form == 1 : form đổi mật khẩu
+	$('.template-4_information .card .loading-pure').show();
+	setTimeout(function () {
+		if (form == 0) {
+			$('.template-4_information .card .card-header .card-title').text('Cập nhật thông tin tài khoản');
+			$('#informationView').hide();
+			$('#informationFrom').show();
+		} else if (form == 1) {
+			$('.template-4_information .card .card-header .card-title').text('Đổi mật khẩu');
+			$('#informationView').hide();
+			$('#passwordFrom').show();
+		} else {
+			$('.template-4_information .card .card-header .card-title').text('Thông tin tài khoản');
+			$('#informationFrom').hide();
+			$('#passwordFrom').hide();
+			$('#informationView').show();
+		}
+		$('.template-4_information .card .loading-pure').hide();
+	}, 1000);
+}
