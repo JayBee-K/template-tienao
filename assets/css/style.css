@@ -38,6 +38,28 @@ textarea:focus,
     outline: none !important;
 }
 
+.custom-switch .custom-control-label {
+    cursor: pointer;
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.custom-switch .custom-control-label::before {
+    width: 3rem;
+    height: 1.15rem;
+}
+
+.custom-switch .custom-control-label::after {
+    height: calc(1.15rem - 4px);
+    width: calc(1.15rem - 4px);
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+    -webkit-transform: translateX(1.9rem);
+    transform: translateX(1.9rem);
+}
+
 .top-0 {
     top: 0 !important;
 }
@@ -114,7 +136,7 @@ textarea:focus,
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255,255,255,.8);
+    background-color: rgba(255, 255, 255, .8);
 }
 
 .loading-pure div {
@@ -196,6 +218,10 @@ textarea:focus,
     min-width: 140px;
     font-size: 1em;
     font-weight: 700;
+}
+
+[class*=template-4] > .card {
+    overflow: hidden;
 }
 
 .template-4_header {
@@ -343,6 +369,68 @@ textarea:focus,
     position: relative;
 }
 
+.template-4_header .action-area > ul > li.login-list {
+    padding: 23px 0;
+}
+
+.template-4_header .action-area > ul > li.login-list > a {
+    font-size: 1.05em;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    padding: 8px 0 8px 15px;
+    color: #fff;
+    display: inline-block;
+}
+
+.template-4_header .action-area > ul > li.login-list > ul {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 35px);
+    opacity: 0;
+    visibility: hidden;
+    -o-transition: .3s opacity ease-in-out, .3s top ease-in-out;
+    transition: .3s opacity ease-in-out, .3s top ease-in-out;
+    -webkit-transition: .3s opacity ease-in-out, .3s top ease-in-out;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+    z-index: 10;
+}
+
+.template-4_header .action-area > ul > li.login-list > ul > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 15px;
+    font-size: 1.05em;
+    transition: .3s all ease;
+    color: var(--text-gray);
+}
+
+.template-4_header .action-area > ul > li.login-list > ul > li > a > i {
+    transition: .4s all ease;
+    margin-right: 4px;
+}
+
+.template-4_header .action-area > ul > li.login-list > ul > li > a > i:before {
+    transition: .4s all ease;
+}
+
+.template-4_header .action-area > ul > li.login-list > ul > li:hover > a {
+    padding-left: 20px;
+    color: var(--color-main);
+}
+
+.template-4_header .action-area > ul > li.login-list > ul > li:hover > a > i:before {
+    content: "\f178";
+}
+
+.template-4_header .action-area > ul > li.login-list:hover > ul {
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
 .template-4_header .action-area > ul > li.language {
     padding: 23px 0;
 }
@@ -398,13 +486,14 @@ textarea:focus,
 }
 
 .template-4_header .action-area > ul > li.language:hover > ul {
-    top: calc(100% + 5px);
+    top: 100%;
     opacity: 1;
     visibility: visible;
 }
 
 .template-4_header .action-area > ul > li.login {
     margin-left: 15px;
+    position: relative;
 }
 
 .template-4_header .action-area > ul > li.login > a {
@@ -433,6 +522,7 @@ textarea:focus,
 .template-4_aboutus .card .card-body .card-title {
     font-weight: 900;
     font-size: 1.2em;
+    letter-spacing: .5px;
     color: var(--text-dark);
 }
 
@@ -473,6 +563,7 @@ textarea:focus,
 .template-4_exchange .card .card-header .card-title {
     font-weight: 900;
     font-size: 1.2em;
+    letter-spacing: .5px;
     color: var(--text-dark);
     margin-bottom: 0;
 }
@@ -515,38 +606,42 @@ textarea:focus,
     opacity: .8;
 }
 
-.template-4_exchange .card .card-body .form-group {
-    margin-bottom: 30px;
-}
-
 .template-4_exchange .card .card-body .form-group > label {
     font-size: 1.10em;
     font-weight: 500;
     color: var(--text-gray);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     background: transparent;
     border-color: rgba(55, 55, 89, 0.1);
 }
 
 .template-4_exchange .card .card-body .form-group .input-group .input-group-prepend .input-group-text {
-    background-color: #fff;
+    background-color: var(--bg-light);
     margin-bottom: 0 !important;
     font-size: 1em;
-    padding: 5px 15px;
+    padding: 5px 0;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    min-width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .template-4_exchange .card .card-body .form-group .input-group .input-group-append .input-group-text {
-    background-color: #fff;
+    background-color: var(--bg-light);
     margin-bottom: 0 !important;
     font-size: 1em;
-    padding: 5px 15px;
+    padding: 5px 0;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    min-width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.template-4_exchange .card .card-body .form-group .input-group .input-group-append .input-group-text,
+.template-4_exchange .card .card-body .form-group .input-group .input-group-append .input-group-text i,
 .template-4_exchange .card .card-body .form-group .input-group .input-group-prepend .input-group-text i {
     font-size: 1.4em;
 }
@@ -560,6 +655,12 @@ textarea:focus,
     font-size: 1.05em;
     color: var(--text-dark);
     transition: all 0.3s ease-in-out;
+    /*background: var(--bg-main);*/
+    background: var(--bg-white);
+}
+
+.template-4_exchange .card .card-body .form-group .input-group .form-control:disabled,
+.template-4_exchange .card .card-body .form-group .input-group .form-control:not(select):read-only {
     background: var(--bg-main);
 }
 
@@ -596,6 +697,7 @@ textarea:focus,
     display: flex;
     justify-content: space-between;
     align-items: center;
+    letter-spacing: .5px;
 }
 
 .template-4_sidebar .sidebar-item .card .card-header .nav-tabs {
@@ -604,14 +706,14 @@ textarea:focus,
 
 .template-4_sidebar .sidebar-item .card .card-header .nav-tabs .nav-item .nav-link {
     padding: 2px 12px;
-    border-radius: .35rem;
+    border-radius: .25rem;
     color: #fff;
     font-weight: 500;
-    border: 1px solid transparent;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .225);
     position: relative;
     transition: .3s all ease-in-out;
     background-color: #fff;
+    border: 0;
     font-size: 0.85em;
     letter-spacing: .5px;
 }
@@ -622,12 +724,12 @@ textarea:focus,
 
 .template-4_sidebar .sidebar-item .card .card-header .nav-tabs .nav-item .nav-link.tab-buy {
     background-color: var(--color-hover);
-    border-color: var(--color-hover);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0)) !important;
 }
 
 .template-4_sidebar .sidebar-item .card .card-header .nav-tabs .nav-item .nav-link.tab-sell {
     background-color: var(--color-red);
-    border-color: var(--color-red);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0)) !important;
 }
 
 .template-4_sidebar .sidebar-item .card .card-header .nav-tabs .nav-item .nav-link.active {
@@ -711,6 +813,7 @@ textarea:focus,
     font-size: 1.2em;
     color: var(--text-dark);
     margin-bottom: 0;
+    letter-spacing: .5px;
 }
 
 .template-4_table .card .card-body .table-responsive::-webkit-scrollbar {
@@ -795,9 +898,8 @@ textarea:focus,
     margin: 0 4px;
 }
 
-.template-4_table .card .card-body table tbody tr td .btn-sm {
-    padding: 0 12px;
-    font-size: .95em;
+.template-4_table .card .card-body table tbody tr td .btn-sm i {
+    width: 18px;
 }
 
 .template-4_table .card .card-body table tbody tr td .icon-circle {
@@ -843,6 +945,7 @@ textarea:focus,
     font-size: 1.2em;
     color: var(--text-dark);
     margin-bottom: 0;
+    letter-spacing: .5px;
 }
 
 .template-4_notification .card .card-body ul li {
@@ -882,6 +985,7 @@ textarea:focus,
     font-size: 1.2em;
     color: var(--text-dark);
     margin-bottom: 0;
+    letter-spacing: .5px;
 }
 
 .template-4_information .card .card-body {
@@ -938,6 +1042,7 @@ textarea:focus,
     font-size: 1.2em;
     color: var(--text-dark);
     margin-bottom: 0;
+    letter-spacing: .5px;
 }
 
 .template-4_security .card .card-body {
@@ -945,12 +1050,13 @@ textarea:focus,
 }
 
 .template-4_security .card .card-body .card,
-.template-4_security .card .card-body .card .bg-white{
+.template-4_security .card .card-body .card .bg-white {
     height: 100%;
 }
 
 .template-4_security .card .card-body .card .card-body .card-title {
     height: 38px;
+    letter-spacing: .5px;
 }
 
 .template-4_security .card .card-body .card .card-body .card-text {

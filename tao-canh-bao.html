@@ -753,16 +753,11 @@
 				</div>
 			</div>
 			<div class="col-md-9 order-md-2 order-1">
-				<div class="template-4_alert">
-					<div class="alert alert-success">
-						Mua bán, chuyển đổi Ethereum sang USDT ERC20 nhanh chóng, an toàn, tự động 24/7 trong vòng 30 giây. Giá Ethereum (Coin_ETH) và giá USDT ERC20 (Coin_USDT_ERC20) hôm nay rẻ nhất tại Việt Nam.
-					</div>
-				</div>
-				<div class="template-4_exchange mt-20px">
+				<div class="template-4_exchange">
 					<div class="card rounded-lg shadow-sm bg-white">
-						<div class="card-header bg-transparent rounded-0 border-0">
-							<div class="card-title">
-								Bán <span class="color-green">Bitcoin-Maritime Bank</span>
+						<div class="card-header bg-danger bg-gradient  rounded-0 border-0">
+							<div class="card-title text-white mb-2">
+								Quản lý cảnh báo giá
 							</div>
 						</div>
 						<div class="card-body">
@@ -770,75 +765,98 @@
 								<div class="row">
 									<div class="col-md-6">
 										<div class="form-group">
-											<label class="mr-sm-2">Số lượng Bitcoin muốn đổi</label>
+											<label class="mr-sm-2">Chọn loại coin</label>
 											<div class="input-group mb-3">
 												<div class="input-group-prepend">
 													<label class="input-group-text"><i
 															class="fab fa-bitcoin"></i></label>
 												</div>
-												<input type="number" min="0" data-placement="auto" data-trigger="focus"
-												       data-price="1350870968"
-												       title="Tối thiểu : 0.00010000 BTC , Phí cố định: 0.00010000 BTC"
-												       data-toggle="tooltip" class="form-control change-coin"
-												       placeholder="Số lượng muốn đổi">
+												<select name="" class="form-control">
+													<option value="-1">-- Chọn loại coin --</option>
+													<option value="">Bitcoin</option>
+													<option value="">Litecoin</option>
+													<option value="">Ethereum</option>
+													<option value="">USDT ERC20</option>
+													<option value="">Filecoin</option>
+													<option value="">USDT TRC20</option>
+													<option value="">USDT OMNI</option>
+													<option value="">Litecoin</option>
+												</select>
 											</div>
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="form-group">
-											<label class="mr-sm-2">Tỉ giá quy đổi</label>
+											<label class="mr-sm-2">Giá thực tế</label>
 											<div class="input-group mb-3">
 												<div class="input-group-prepend">
-													<label class="input-group-text">VNĐ</label>
+													<label class="input-group-text"><i
+															class="fas fa-dollar-sign"></i></label>
 												</div>
-												<input type="text" readonly class="form-control result-coin"
-												       placeholder="1 Ethereum = 2,122.369753 USDT">
+												<input type="number" class="form-control">
+												<div class="input-group-append">
+													<label class="input-group-text">USDT</label>
+												</div>
 											</div>
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="form-group">
-											<label class="mr-sm-2">Số tiền nhận USDT ERC20</label>
+											<label class="mr-sm-2">Giá mua</label>
 											<div class="input-group mb-3">
 												<div class="input-group-prepend">
-													<label class="input-group-text">VNĐ</label>
+													<label class="input-group-text"><i
+															class="fas fa-dollar-sign"></i></label>
 												</div>
-												<input type="text" readonly class="form-control result-coin"
-												       placeholder="1 Ethereum = 2,122.369753 USDT">
+												<input type="number" class="form-control">
+												<div class="input-group-append">
+													<label class="input-group-text">USDT</label>
+												</div>
 											</div>
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="form-group">
-											<label class="mr-sm-2">Chúng tôi có</label>
+											<label class="mr-sm-2">Giá bán</label>
 											<div class="input-group mb-3">
-												<input type="text" readonly class="form-control"
-												       placeholder="0 BTC">
+												<div class="input-group-prepend">
+													<label class="input-group-text"><i
+															class="fas fa-dollar-sign"></i></label>
+												</div>
+												<input type="number" class="form-control">
+												<div class="input-group-append">
+													<label class="input-group-text">USDT</label>
+												</div>
 											</div>
 										</div>
 									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<label class="mr-sm-2">Số tài khoản nhận USDT ERC20</label>
-											<div class="input-group mb-3">
-												<input type="text" class="form-control"
-												       placeholder="Số tài khoản">
+									<div class="col-md-12">
+										<div class="row align-items-center no-gutters pb-3 mb-3">
+											<div class="col-md-2">
+												<label for="" class="mb-0 font-weight-bold">
+													Trạng thái
+												</label>
 											</div>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<label class="mr-sm-2">Tên tài khoản nhận USDT ERC20</label>
-											<div class="input-group mb-3">
-												<input type="text" class="form-control"
-												       placeholder="Tên tài khoản">
+											<div class="col-md-10">
+												<div class="form-group mb-0">
+													<div class="custom-control custom-radio custom-control-inline align-items-center">
+														<input type="radio" id="status01" name="status"
+														       class="custom-control-input" checked>
+														<label class="custom-control-label mb-0" for="status01">Bật</label>
+													</div>
+													<div class="custom-control custom-radio custom-control-inline align-items-center">
+														<input type="radio" id="status02" name="status"
+														       class="custom-control-input">
+														<label class="custom-control-label mb-0" for="status02">Tắt</label>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 								<div class="text-center mt-5">
 									<button class="btn btn-success template-4_btn">
-										Tiếp tục
+										Tạo cảnh báo
 									</button>
 								</div>
 							</form>
