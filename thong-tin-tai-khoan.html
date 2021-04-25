@@ -191,16 +191,16 @@
 <header class="template-4_header">
 	<div class="container">
 		<div class="row align-items-center">
-			<div class="col-lg-2">
+			<div class="col-lg-2 col-8 order-lg-1 order-1">
 				<div class="logo-area">
 					<a href="index.html" class="d-inline-block">
 						<img src="./assets/images/logo.png" alt="">
 					</a>
 				</div>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-lg-8 order-lg-2 order-3">
 				<div class="navigation-area">
-					<ul class="list-unstyled mb-0">
+					<ul class="list-unstyled mb-0" id="has-navigation">
 						<li>
 							<a href="#">
 								Bán USDT
@@ -250,9 +250,49 @@
 							</a>
 						</li>
 					</ul>
+					<div class="navigation-user bg-light border-bottom d-block d-lg-none">
+						<div class="container d-none py-3 px-2">
+							<div class="row row-5">
+								<div class="col-6">
+									<a href="#modalLogin" data-toggle="modal"
+									   class="btn btn-success w-100 bg-gradient">
+										Đăng nhập
+									</a>
+								</div>
+								<div class="col-6">
+									<a href="#modalRegister" data-toggle="modal"
+									   class="btn btn-outline-success bg-gradient w-100">
+										Đăng ký
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="user-login">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:void(0)">
+										<i class="fas fa-user mr-2"></i>
+										Thông tin tài khoản
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<i class="fas fa-lock-alt mr-2"></i>
+										Bảo mật
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<i class="fas fa-sign-out-alt mr-2"></i>
+										Đăng xuất
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="col-lg-2">
+			<div class="col-lg-2 col-4 order-lg-3 order-2">
 				<div class="action-area">
 					<ul class="list-unstyled mb-0">
 						<li class="language">
@@ -317,11 +357,17 @@
 								</li>
 							</ul>
 						</li>
+						<li class="hamburger">
+							<div id="hamburger">
+								<span></span>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div class="overlay"></div>
 </header>
 <div class="template-4_main">
 	<div class="container">
@@ -883,7 +929,7 @@
 								<form action="">
 									<div class="row align-items-center no-gutters pb-3 mb-3">
 										<div class="col-md-4">
-											<label for="user" class="mb-0 font-weight-bold">
+											<label for="user" class="mb-3 mb-md-0 font-weight-bold">
 												Tên đăng nhập
 											</label>
 										</div>
@@ -896,7 +942,7 @@
 									</div>
 									<div class="row align-items-center no-gutters pb-3 mb-3">
 										<div class="col-md-4">
-											<label for="fullname" class="mb-0 font-weight-bold">
+											<label for="fullname" class="mb-3 mb-md-0 font-weight-bold">
 												Họ & tên
 											</label>
 										</div>
@@ -909,7 +955,7 @@
 									</div>
 									<div class="row align-items-center no-gutters pb-3 mb-3">
 										<div class="col-md-4">
-											<label for="email" class="mb-0 font-weight-bold">
+											<label for="email" class="mb-3 mb-md-0 font-weight-bold">
 												Email đăng nhập
 											</label>
 										</div>
@@ -922,7 +968,7 @@
 									</div>
 									<div class="row align-items-center no-gutters pb-3 mb-3">
 										<div class="col-md-4">
-											<label for="phone" class="mb-0 font-weight-bold">
+											<label for="phone" class="mb-3 mb-md-0 font-weight-bold">
 												Số điện thoại
 											</label>
 										</div>
@@ -935,7 +981,7 @@
 									</div>
 									<div class="row align-items-center no-gutters pb-3 mb-3">
 										<div class="col-md-4">
-											<label for="" class="mb-0 font-weight-bold">
+											<label for="" class="mb-3 mb-md-0 font-weight-bold">
 												Giới tính
 											</label>
 										</div>
@@ -962,7 +1008,7 @@
 									</div>
 									<div class="row align-items-center no-gutters pb-3 mb-3">
 										<div class="col-md-4">
-											<label for="language" class="mb-0 font-weight-bold">
+											<label for="language" class="mb-3 mb-md-0 font-weight-bold">
 												Ngôn ngữ
 											</label>
 										</div>
@@ -978,7 +1024,7 @@
 									</div>
 									<div class="row align-items-center no-gutters pb-3 mb-3">
 										<div class="col-md-4">
-											<label for="country" class="mb-0 font-weight-bold">
+											<label for="country" class="mb-3 mb-md-0 font-weight-bold">
 												Quốc gia
 											</label>
 										</div>
@@ -1002,7 +1048,7 @@
 									</div>
 									<div class="row align-items-center no-gutters pb-3 mb-3">
 										<div class="col-md-4">
-											<label for="password02" class="mb-0 font-weight-bold">
+											<label for="password02" class="mb-3 mb-md-0 font-weight-bold">
 												Mạt khẩu cấp 2
 											</label>
 										</div>
@@ -1027,7 +1073,7 @@
 								<form action="">
 									<div class="row align-items-center no-gutters pb-3 mb-3">
 										<div class="col-md-4">
-											<label for="passwordold" class="mb-0 font-weight-bold">
+											<label for="passwordold" class="mb-3 mb-md-0 font-weight-bold">
 												Mạt khẩu cũ
 											</label>
 										</div>
@@ -1040,7 +1086,7 @@
 									</div>
 									<div class="row align-items-center no-gutters pb-3 mb-3">
 										<div class="col-md-4">
-											<label for="passwordnew" class="mb-0 font-weight-bold">
+											<label for="passwordnew" class="mb-3 mb-md-0 font-weight-bold">
 												Mật khẩu mới
 											</label>
 										</div>
@@ -1053,7 +1099,7 @@
 									</div>
 									<div class="row align-items-center no-gutters pb-3 mb-3">
 										<div class="col-md-4">
-											<label for="confirmpasswordnew" class="mb-0 font-weight-bold">
+											<label for="confirmpasswordnew" class="mb-3 mb-md-0 font-weight-bold">
 												Nhập lại mật khẩu mới
 											</label>
 										</div>
@@ -1276,12 +1322,12 @@
 	<div class="bottom-area">
 		<div class="container">
 			<div class="row align-items-center">
-				<div class="col-sm-6">
+				<div class="col-sm-6 order-md-1 order-2">
 					<div class="bottom-desc">
 						Phần mềm, ứng dụng di động, quản trị mạng
 					</div>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-6 order-md-2 order-1">
 					<div class="bottom-list">
 						<ul class="list-unstyled mb-0">
 							<li>

@@ -191,16 +191,16 @@
 <header class="template-4_header">
 	<div class="container">
 		<div class="row align-items-center">
-			<div class="col-lg-2">
+			<div class="col-lg-2 col-8 order-lg-1 order-1">
 				<div class="logo-area">
 					<a href="index.html" class="d-inline-block">
 						<img src="./assets/images/logo.png" alt="">
 					</a>
 				</div>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-lg-8 order-lg-2 order-3">
 				<div class="navigation-area">
-					<ul class="list-unstyled mb-0">
+					<ul class="list-unstyled mb-0" id="has-navigation">
 						<li>
 							<a href="#">
 								Bán USDT
@@ -250,9 +250,49 @@
 							</a>
 						</li>
 					</ul>
+					<div class="navigation-user bg-light border-bottom d-block d-lg-none">
+						<div class="container py-3 px-2">
+							<div class="row row-5">
+								<div class="col-6">
+									<a href="#modalLogin" data-toggle="modal"
+									   class="btn btn-success w-100 bg-gradient">
+										Đăng nhập
+									</a>
+								</div>
+								<div class="col-6">
+									<a href="#modalRegister" data-toggle="modal"
+									   class="btn btn-outline-success bg-gradient w-100">
+										Đăng ký
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="user-login d-none">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:void(0)">
+										<i class="fas fa-user mr-2"></i>
+										Thông tin tài khoản
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<i class="fas fa-lock-alt mr-2"></i>
+										Bảo mật
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<i class="fas fa-sign-out-alt mr-2"></i>
+										Đăng xuất
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="col-lg-2">
+			<div class="col-lg-2 col-4 order-lg-3 order-2">
 				<div class="action-area">
 					<ul class="list-unstyled mb-0">
 						<li class="language">
@@ -291,11 +331,43 @@
 								Đăng nhập
 							</a>
 						</li>
+						<li class="login-list d-none">
+							<a href="javascript:void(0)">
+								<i class="fas fa-user"></i>
+								Tài khoản
+							</a>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:void(0)">
+										<i class="fal fa-angle-right"></i>
+										Thông tin tài khoản
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<i class="fal fa-angle-right"></i>
+										Bảo mật
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<i class="fal fa-angle-right"></i>
+										Đăng xuất
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="hamburger">
+							<div id="hamburger">
+								<span></span>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div class="overlay"></div>
 </header>
 <div class="template-4_main">
 	<div class="container">
@@ -1093,9 +1165,9 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-						<div class="template-4_exchange">
+						<div class="template-4_exchange mt-20px mt-md-0">
 							<div class="card rounded-lg shadow-sm bg-white">
-								<div class="card-header bg-success bg-gradient rounded-0 border-0">
+								<div class="card-header bg-danger bg-gradient rounded-0 border-0">
 									<div class="card-title text-white mb-2">
 										Đặt lệnh bán
 									</div>
@@ -1310,12 +1382,12 @@
 	<div class="bottom-area">
 		<div class="container">
 			<div class="row align-items-center">
-				<div class="col-sm-6">
+				<div class="col-sm-6 order-md-1 order-2">
 					<div class="bottom-desc">
 						Phần mềm, ứng dụng di động, quản trị mạng
 					</div>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-6 order-md-2 order-1">
 					<div class="bottom-list">
 						<ul class="list-unstyled mb-0">
 							<li>
@@ -1340,7 +1412,6 @@
 		</div>
 	</div>
 </footer>
-
 <script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
 <script type="text/javascript" src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="./assets/plugin/swiper/swiper.js"></script>
