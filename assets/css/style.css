@@ -223,6 +223,10 @@ textarea:focus,
     margin-top: 20px;
 }
 
+.mb-075rem {
+    margin-bottom: .75rem !important;
+}
+
 .link-cover::after {
     position: absolute;
     top: 0;
@@ -244,6 +248,7 @@ textarea:focus,
 
 [class*=template-4] > .card {
     overflow: hidden;
+    border-radius: 0 !important;
 }
 
 .template-4_header {
@@ -530,7 +535,7 @@ textarea:focus,
     letter-spacing: 0.5px;
     font-weight: 700;
     padding: 8px 15px;
-    border-radius: .45rem;
+    /*border-radius: .45rem;*/
     display: inline-block;
 }
 
@@ -746,6 +751,10 @@ textarea:focus,
     height: auto;
 }
 
+#heightSidebar .template-4_exchange .card {
+    height: 100%;
+}
+
 .template-4_exchange .card .card-header,
 .template-4_exchange .card .card-body {
     padding-left: 0.75rem;
@@ -781,7 +790,6 @@ textarea:focus,
 .template-4_exchange .card .card-header .nav-tabs .nav-item .nav-link {
     padding: 5px 20px;
     border-radius: 0;
-    color: var(--bg-white);
     font-weight: 500;
     border: 1px solid transparent;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .23);
@@ -790,7 +798,6 @@ textarea:focus,
     background-color: #fff;
     font-size: 1em;
     letter-spacing: .5px;
-    opacity: 0.7;
 }
 
 .template-4_exchange .card .card-header .nav-tabs .nav-item:not(:last-of-type) {
@@ -798,17 +805,25 @@ textarea:focus,
 }
 
 .template-4_exchange .card .card-header .nav-tabs .nav-item .nav-link.tab-buy {
-    background-color: var(--color-hover);
+    border-color: var(--color-hover);
+    color: var(--color-hover);
 }
 
 .template-4_exchange .card .card-header .nav-tabs .nav-item .nav-link.tab-sell {
-    background-color: var(--color-red);
+    border-color: var(--color-red);
+    color: var(--color-red);
 }
 
-.template-4_exchange .card .card-header .nav-tabs .nav-item .nav-link.active {
+.template-4_exchange .card .card-header .nav-tabs .nav-item .nav-link.active.tab-buy {
     box-shadow: none;
-    transform: translateY(-4px);
-    opacity: 1;
+    background-color: var(--color-hover);
+    color: #fff;
+}
+
+.template-4_exchange .card .card-header .nav-tabs .nav-item .nav-link.active.tab-sell {
+    box-shadow: none;
+    background-color: var(--color-red);
+    color: #fff;
 }
 
 .template-4_exchange .card .card-body .form-group > label {
@@ -883,7 +898,30 @@ textarea:focus,
     border-bottom-right-radius: 0;
 }
 
+.template-4_form-small.template-4_exchange .card {
+    height: unset;
+}
+
+.template-4_form-small.template-4_exchange .card .card-body .form-group > label,
+.template-4_form-small.template-4_exchange .card .card-body .form-group .input-group .form-control {
+    font-size: 1em;
+}
+
+.template-4_form-small.template-4_exchange .card .card-body .form-group .input-group .form-control {
+    padding-left: 5px;
+    height: 44px;
+}
+
+.template-4_form-small.template-4_exchange .card .card-body .form-group .input-group .input-group-prepend .input-group-text {
+    font-size: .9em;
+    min-width: 40px;
+}
+
 @media screen and (max-width: 768px) {
+    #heightSidebar .template-4_exchange .card {
+        height: unset;
+    }
+
     .template-4_exchange .card .card-header .nav-tabs .nav-item .nav-link {
         padding: 2px 12px;
         border-radius: .25rem;
@@ -908,6 +946,9 @@ textarea:focus,
     margin-top: 20px;
 }
 
+.template-4_sidebar .sidebar-item .card  {
+    border-radius: 0 !important;
+}
 .template-4_sidebar .sidebar-item .card .card-header,
 .template-4_sidebar .sidebar-item .card .card-body {
     padding-left: 0.75rem;
@@ -933,16 +974,14 @@ textarea:focus,
 .template-4_sidebar .sidebar-item .card .card-header .nav-tabs .nav-item .nav-link {
     padding: 2px 12px;
     border-radius: 0;
-    color: #fff;
     font-weight: 500;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .225);
     position: relative;
+    border: 1px solid transparent;
     transition: .3s all ease-in-out;
     background-color: #fff;
-    border: 0;
     font-size: 0.85em;
     letter-spacing: .5px;
-    opacity: 0.7;
 }
 
 .template-4_sidebar .sidebar-item .card .card-header .nav-tabs .nav-item:not(:last-of-type) {
@@ -950,17 +989,25 @@ textarea:focus,
 }
 
 .template-4_sidebar .sidebar-item .card .card-header .nav-tabs .nav-item .nav-link.tab-buy {
-    background-color: var(--color-hover);
+    border-color: var(--color-hover);
+    color: var(--color-hover);
 }
 
 .template-4_sidebar .sidebar-item .card .card-header .nav-tabs .nav-item .nav-link.tab-sell {
-    background-color: var(--color-red);
+    border-color: var(--color-red);
+    color: var(--color-red);
 }
 
-.template-4_sidebar .sidebar-item .card .card-header .nav-tabs .nav-item .nav-link.active {
+.template-4_sidebar .sidebar-item .card .card-header .nav-tabs .nav-item .nav-link.active.tab-sell {
     box-shadow: none;
-    transform: translateY(-2px);
-    opacity: 1;
+    background-color: var(--color-red);
+    color: #fff;
+}
+
+.template-4_sidebar .sidebar-item .card .card-header .nav-tabs .nav-item .nav-link.active.tab-buy {
+    box-shadow: none;
+    background-color: var(--color-hover);
+    color: #fff;
 }
 
 .template-4_sidebar .sidebar-item .card .card-body {
@@ -988,7 +1035,7 @@ textarea:focus,
 
 .template-4_sidebar .sidebar-item .card .card-body ul li a {
     background: var(--bg-main);
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     padding: 10px;
     transition: .4s all ease-in-out;
     cursor: pointer;
@@ -1078,15 +1125,15 @@ textarea:focus,
     border: 0;
 }
 
-.template-4_table .card .card-body table thead tr th:first-child {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
+/*.template-4_table .card .card-body table thead tr th:first-child {*/
+/*    border-top-left-radius: 5px;*/
+/*    border-bottom-left-radius: 5px;*/
+/*}*/
 
-.template-4_table .card .card-body table thead tr th:last-child {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
+/*.template-4_table .card .card-body table thead tr th:last-child {*/
+/*    border-top-right-radius: 5px;*/
+/*    border-bottom-right-radius: 5px;*/
+/*}*/
 
 .template-4_table .card .card-body table tbody tr {
     overflow: hidden;
@@ -1097,20 +1144,22 @@ textarea:focus,
     border: 0;
 }
 
-.template-4_table .card .card-body table tbody tr td:first-child {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
+/*.template-4_table .card .card-body table tbody tr td:first-child {*/
+/*    border-top-left-radius: 5px;*/
+/*    border-bottom-left-radius: 5px;*/
+/*}*/
 
-.template-4_table .card .card-body table tbody tr td:last-child {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
+/*.template-4_table .card .card-body table tbody tr td:last-child {*/
+/*    border-top-right-radius: 5px;*/
+/*    border-bottom-right-radius: 5px;*/
+/*}*/
 
 .template-4_table .card .card-body table .badge {
     padding: .4rem .6rem .2rem;
     line-height: 1;
     font-size: 85%;
+    border-radius: 0;
+    color: #fff;
 }
 
 .template-4_table .card .card-body table tbody tr td {
@@ -1148,11 +1197,6 @@ textarea:focus,
     width: 23px;
     flex-shrink: 0;
     margin-right: 8px;
-}
-
-.template-4_notification {
-    position: sticky;
-    top: 5px;
 }
 
 .template-4_notification .card .card-header,
@@ -1277,6 +1321,7 @@ textarea:focus,
 .template-4_security .card .card-body .card,
 .template-4_security .card .card-body .card .bg-white {
     height: 100%;
+    border-radius: 0;
 }
 
 .template-4_security .card .card-body .card .card-body .card-title {
@@ -1374,25 +1419,14 @@ textarea:focus,
     justify-content: center;
     height: 32px;
     width: 32px;
-    color: var(--bg-white);
-    background: var(--text-dark);
+    color: var(--text-dark);
+    background: var(--bg-main);
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease-out 0s;
     -webkit-transition: all 0.3s ease-out 0s;
     border-radius: 4px;
-    font-size: 0.95em;
-}
-
-.template-4_footer .top-area .footer-social ul li a:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    content: "";
-    background: linear-gradient(rgba(255, 255, 255, 0.3), transparent);
-    border-radius: 4px;
+    font-size: 1em;
 }
 
 
@@ -1612,4 +1646,8 @@ textarea:focus,
 
 .template-4_toast .toast .close:hover {
     color: #fff;
+}
+
+.template-4_alert .alert {
+    border-radius: 0;
 }
