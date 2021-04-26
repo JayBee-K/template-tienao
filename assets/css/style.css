@@ -747,8 +747,8 @@ textarea:focus,
 }
 
 .template-4_aboutus .card .card-img {
-    max-width: 80%;
-    height: unset;
+    max-width: 200px;
+    max-height: 150px;
 }
 
 #heightSidebar .template-4_exchange .card {
