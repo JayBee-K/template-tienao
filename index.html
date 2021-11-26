@@ -852,80 +852,21 @@
 					<div class="row row-10 mt-20px">
 						<div class="col-md-6">
 							<div class="template-4_exchange">
-								<div class="card rounded-lg shadow-sm bg-white">
-									<div class="card-header bg-transparent rounded-0 border-0">
-										<div class="card-title">
-											Mua bán tiền ảo
-										</div>
+								<div class="card no-overflow border-0 rounded-lg bg-white">
+									<div class="template-4_tab">
 										<ul class="nav nav-tabs">
 											<li class="nav-item">
-												<a class="nav-link tab-buy active" data-toggle="tab" href="#buy">Bán</a>
+												<a class="nav-link tab-buy active" data-toggle="tab"
+												   href="#buy">Bán</a>
 											</li>
 											<li class="nav-item">
 												<a class="nav-link tab-sell" data-toggle="tab" href="#sell">Mua</a>
 											</li>
 										</ul>
 									</div>
-									<div class="card-body">
+									<div class="card-body border border-top-0 shadow-sm">
 										<div class="tab-content">
 											<div class="tab-pane fade show active" id="buy">
-												<form class="form-validated" action="">
-													<div class="form-group">
-														<label class="mr-sm-2">Coin muốn gửi</label>
-														<div class="input-group mb-3">
-															<div class="input-group-prepend">
-																<label class="input-group-text"><i
-																		class="fab fa-bitcoin"></i></label>
-															</div>
-															<select name="" class="form-control">
-																<option value="-1">-- Chọn coin muốn gửi --</option>
-																<option value="">Bitcoin</option>
-																<option value="">Litecoin</option>
-																<option value="">Ethereum</option>
-																<option value="">USDT ERC20</option>
-																<option value="">Filecoin</option>
-																<option value="">USDT TRC20</option>
-																<option value="">USDT OMNI</option>
-																<option value="">Litecoin</option>
-															</select>
-														</div>
-													</div>
-													<div class="form-group">
-														<label class="mr-sm-2">Ngân hàng muốn gửi</label>
-														<div class="input-group mb-3">
-															<div class="input-group-prepend">
-																<label class="input-group-text"><i
-																		class="fas fa-university"></i></label>
-															</div>
-															<select name="" class="form-control">
-																<option value="-1">-- Chọn ngân hàng muốn gửi --</option>
-																<option value="">Đông Á</option>
-																<option value="">Maritime Bank</option>
-																<option value="">BIDV</option>
-																<option value="">MB Bank</option>
-																<option value="">Vietinbank</option>
-																<option value="">Á Châu</option>
-																<option value="">Nông nghiệp</option>
-																<option value="">Techcombank</option>
-															</select>
-														</div>
-													</div>
-													<div class="form-group">
-														<label class="mr-sm-2">Số coin bán</label>
-														<div class="input-group mb-3">
-															<input type="text" name="" class="form-control" placeholder="1 BTC">
-															<input type="text" name="" class="form-control"
-															       placeholder="1,525,666,249 VND">
-														</div>
-													</div>
-													<div class="text-center mt-5">
-														<button class="btn btn-success template-4_btn">
-															Tiếp tục
-														</button>
-													</div>
-												</form>
-											</div>
-											<div class="tab-pane fade" id="sell">
 												<form class="form-validated" action="">
 													<div class="form-group">
 														<label class="mr-sm-2">Coin muốn bán</label>
@@ -948,14 +889,15 @@
 														</div>
 													</div>
 													<div class="form-group">
-														<label class="mr-sm-2">Ngân hàng muốn gửi</label>
+														<label class="mr-sm-2">Ngân hàng muốn giao dịch</label>
 														<div class="input-group mb-3">
 															<div class="input-group-prepend">
 																<label class="input-group-text"><i
 																		class="fas fa-university"></i></label>
 															</div>
 															<select name="" class="form-control">
-																<option value="-1">-- Chọn ngân hàng muốn gửi --</option>
+																<option value="-1">-- Chọn ngân hàng muốn giao dịch --
+																</option>
 																<option value="">Đông Á</option>
 																<option value="">Maritime Bank</option>
 																<option value="">BIDV</option>
@@ -970,7 +912,67 @@
 													<div class="form-group">
 														<label class="mr-sm-2">Số coin bán</label>
 														<div class="input-group mb-3">
-															<input type="text" name="" class="form-control" placeholder="1 BTC">
+															<input type="text" name="" class="form-control"
+															       placeholder="1 BTC">
+															<input type="text" name="" class="form-control"
+															       placeholder="1,525,666,249 VND">
+														</div>
+													</div>
+													<div class="text-center mt-5">
+														<button class="btn btn-success template-4_btn">
+															Tiếp tục
+														</button>
+													</div>
+												</form>
+											</div>
+											<div class="tab-pane fade" id="sell">
+												<form class="form-validated" action="">
+													<div class="form-group">
+														<label class="mr-sm-2">Coin muốn mua</label>
+														<div class="input-group mb-3">
+															<div class="input-group-prepend">
+																<label class="input-group-text"><i
+																		class="fab fa-bitcoin"></i></label>
+															</div>
+															<select name="" class="form-control">
+																<option value="-1">-- Chọn coin muốn mua --</option>
+																<option value="">Bitcoin</option>
+																<option value="">Litecoin</option>
+																<option value="">Ethereum</option>
+																<option value="">USDT ERC20</option>
+																<option value="">Filecoin</option>
+																<option value="">USDT TRC20</option>
+																<option value="">USDT OMNI</option>
+																<option value="">Litecoin</option>
+															</select>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="mr-sm-2">Ngân hàng muốn giao dịch</label>
+														<div class="input-group mb-3">
+															<div class="input-group-prepend">
+																<label class="input-group-text"><i
+																		class="fas fa-university"></i></label>
+															</div>
+															<select name="" class="form-control">
+																<option value="-1">-- Chọn ngân hàng muốn giao dịch --
+																</option>
+																<option value="">Đông Á</option>
+																<option value="">Maritime Bank</option>
+																<option value="">BIDV</option>
+																<option value="">MB Bank</option>
+																<option value="">Vietinbank</option>
+																<option value="">Á Châu</option>
+																<option value="">Nông nghiệp</option>
+																<option value="">Techcombank</option>
+															</select>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="mr-sm-2">Số coin mua</label>
+														<div class="input-group mb-3">
+															<input type="text" name="" class="form-control"
+															       placeholder="1 BTC">
 															<input type="text" name="" class="form-control"
 															       placeholder="1,525,666,249 VND">
 														</div>
@@ -989,7 +991,21 @@
 						</div>
 						<div class="col-md-6">
 							<div class="template-4_exchange mt-20px mt-md-0">
-								<div class="card rounded-lg shadow-sm bg-white">
+								<div class="card no-overflow border-0  rounded-lg bg-white">
+									<div class="template-4_tab">
+										<ul class="nav nav-tabs">
+											<li class="nav-item">
+												<a class="nav-link tab-buy active" data-toggle="tab"
+												   href="#buyPrice">Bán tiền tệ</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link tab-sell" data-toggle="tab" href="#sellPrice">Mua
+													tiền
+													tệ</a>
+											</li>
+										</ul>
+									</div>
+									<!--
 									<div class="card-header bg-transparent rounded-0 border-0">
 										<div class="card-title">
 											Chuyển tiền tiền tệ
@@ -998,63 +1014,126 @@
 											USD, EUR, USDT, BTC, BCH, ETH, LTC, ERP, DOGE VÀ NHIỀU COIN ẢO KHÁC
 										</p>
 									</div>
-									<div class="card-body">
-										<form class="form-validated" action="">
-											<div class="form-group">
-												<label class="mr-sm-2">Coin muốn đổi</label>
-												<div class="input-group mb-3">
-													<div class="input-group-prepend">
-														<label class="input-group-text"><i
-																class="fab fa-bitcoin"></i></label>
+									-->
+									<div class="card-body  border border-top-0 shadow-sm">
+										<div class="tab-content">
+											<div class="tab-pane fade show active" id="buyPrice">
+												<form class="form-validated" action="">
+													<div class="form-group">
+														<label class="mr-sm-2">Coin muốn đổi</label>
+														<div class="input-group mb-3">
+															<div class="input-group-prepend">
+																<label class="input-group-text"><i
+																		class="fab fa-bitcoin"></i></label>
+															</div>
+															<select name="" class="form-control">
+																<option value="-1">-- Chọn coin muốn đổi --</option>
+																<option value="">Bitcoin</option>
+																<option value="">Litecoin</option>
+																<option value="">Ethereum</option>
+																<option value="">USDT ERC20</option>
+																<option value="">Filecoin</option>
+																<option value="">USDT TRC20</option>
+																<option value="">USDT OMNI</option>
+																<option value="">Litecoin</option>
+															</select>
+														</div>
 													</div>
-													<select name="" class="form-control">
-														<option value="-1">-- Chọn coin muốn đổi --</option>
-														<option value="">Bitcoin</option>
-														<option value="">Litecoin</option>
-														<option value="">Ethereum</option>
-														<option value="">USDT ERC20</option>
-														<option value="">Filecoin</option>
-														<option value="">USDT TRC20</option>
-														<option value="">USDT OMNI</option>
-														<option value="">Litecoin</option>
-													</select>
-												</div>
-											</div>
-											<div class="form-group">
-												<label class="mr-sm-2">Coin muốn nhận</label>
-												<div class="input-group mb-3">
-													<div class="input-group-prepend">
-														<label class="input-group-text"><i
-																class="fas fa-university"></i></label>
+													<div class="form-group">
+														<label class="mr-sm-2">Coin muốn nhận</label>
+														<div class="input-group mb-3">
+															<div class="input-group-prepend">
+																<label class="input-group-text"><i
+																		class="fas fa-university"></i></label>
+															</div>
+															<select name="" class="form-control">
+																<option value="-1">-- Chọn coin muốn nhận --</option>
+																<option value="">Bitcoin</option>
+																<option value="">Litecoin</option>
+																<option value="">Ethereum</option>
+																<option value="">USDT ERC20</option>
+																<option value="">Filecoin</option>
+																<option value="">USDT TRC20</option>
+																<option value="">USDT OMNI</option>
+																<option value="">Litecoin</option>
+															</select>
+														</div>
 													</div>
-													<select name="" class="form-control">
-														<option value="-1">-- Chọn coin muốn nhận --</option>
-														<option value="">Bitcoin</option>
-														<option value="">Litecoin</option>
-														<option value="">Ethereum</option>
-														<option value="">USDT ERC20</option>
-														<option value="">Filecoin</option>
-														<option value="">USDT TRC20</option>
-														<option value="">USDT OMNI</option>
-														<option value="">Litecoin</option>
-													</select>
-												</div>
+													<div class="form-group">
+														<label class="mr-sm-2">Số coin chuyển đổi</label>
+														<div class="input-group mb-3">
+															<input type="text" name="" class="form-control"
+															       placeholder="1 Bitcoin">
+															<input type="text" name="" class="form-control"
+															       placeholder="25.03436170 ETH">
+														</div>
+													</div>
+													<div class="text-center mt-5">
+														<button class="btn btn-success template-4_btn">
+															Tiếp tục
+														</button>
+													</div>
+												</form>
 											</div>
-											<div class="form-group">
-												<label class="mr-sm-2">Số coin chuyển đổi</label>
-												<div class="input-group mb-3">
-													<input type="text" name="" class="form-control"
-													       placeholder="1 Bitcoin">
-													<input type="text" name="" class="form-control"
-													       placeholder="25.03436170 ETH">
-												</div>
+											<div class="tab-pane fade" id="sellPrice">
+												<form class="form-validated" action="">
+													<div class="form-group">
+														<label class="mr-sm-2">Coin muốn đổi</label>
+														<div class="input-group mb-3">
+															<div class="input-group-prepend">
+																<label class="input-group-text"><i
+																		class="fab fa-bitcoin"></i></label>
+															</div>
+															<select name="" class="form-control">
+																<option value="-1">-- Chọn coin muốn đổi --</option>
+																<option value="">Bitcoin</option>
+																<option value="">Litecoin</option>
+																<option value="">Ethereum</option>
+																<option value="">USDT ERC20</option>
+																<option value="">Filecoin</option>
+																<option value="">USDT TRC20</option>
+																<option value="">USDT OMNI</option>
+																<option value="">Litecoin</option>
+															</select>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="mr-sm-2">Coin muốn nhận</label>
+														<div class="input-group mb-3">
+															<div class="input-group-prepend">
+																<label class="input-group-text"><i
+																		class="fas fa-university"></i></label>
+															</div>
+															<select name="" class="form-control">
+																<option value="-1">-- Chọn coin muốn nhận --</option>
+																<option value="">Bitcoin</option>
+																<option value="">Litecoin</option>
+																<option value="">Ethereum</option>
+																<option value="">USDT ERC20</option>
+																<option value="">Filecoin</option>
+																<option value="">USDT TRC20</option>
+																<option value="">USDT OMNI</option>
+																<option value="">Litecoin</option>
+															</select>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="mr-sm-2">Số coin chuyển đổi</label>
+														<div class="input-group mb-3">
+															<input type="text" name="" class="form-control"
+															       placeholder="1 Bitcoin">
+															<input type="text" name="" class="form-control"
+															       placeholder="25.03436170 ETH">
+														</div>
+													</div>
+													<div class="text-center mt-5">
+														<button class="btn btn-success template-4_btn">
+															Tiếp tục
+														</button>
+													</div>
+												</form>
 											</div>
-											<div class="text-center mt-5">
-												<button class="btn btn-success template-4_btn">
-													Tiếp tục
-												</button>
-											</div>
-										</form>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -1371,7 +1450,14 @@
 								<li class="notification-success">
 									<div class="title">
 										<i class="fas fa-check"></i>
-										Mua 60 USD => Techcombank (5)
+										Mua 60 USD => Techcombank
+										<div class="star star-0">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+										</div>
 									</div>
 									<div class="desc">
 										Dịch vụ cực kì tốt
@@ -1381,6 +1467,13 @@
 									<div class="title">
 										<i class="fas fa-check"></i>
 										Mua 60 USD => Techcombank (5)
+										<div class="star star-1">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+										</div>
 									</div>
 									<div class="desc">
 										Dịch vụ cực kì tốt
