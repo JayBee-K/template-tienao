@@ -239,10 +239,9 @@ textarea:focus,
 
 .template-4_btn {
     padding: 8px 40px;
-    border-radius: 0;
     display: inline-block;
     min-width: 140px;
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 700;
 }
 
@@ -1732,10 +1731,6 @@ textarea:focus,
         background: var(--bg-main);
         margin-bottom: 0;
     }
-}
-
-.header-inner_user {
-    margin-left: auto;
 }
 
 .header-inner_user .header-inner_user__item {
