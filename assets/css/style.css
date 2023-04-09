@@ -2201,7 +2201,7 @@ textarea:focus,
     min-width: 50px;
 }
 
-.template-4_exchange__v2.template-4_exchange .card .card-body .form-group .input-group .form-control {
+.template-4_exchange__v2.template-4_exchange .card .card-body .form-group .form-control {
     height: 42px;
     padding-left: 10px;
     padding-right: 10px;
@@ -2210,8 +2210,30 @@ textarea:focus,
     font-weight: 400;
 }
 
-.template-4_exchange__v2.template-4_exchange .card .card-body .form-group .input-group .form-control::placeholder {
-    color: #888;
+.template-4_exchange__v2.template-4_exchange .card .card-body .form-group .input-group.input-group-append__text {
+    position: relative;
+}
+
+.template-4_exchange__v2.template-4_exchange .card .card-body .form-group .input-group.input-group-append__text .form-control {
+    padding-right: 80px;
+    border-radius: 5px;
+}
+
+.template-4_exchange__v2.template-4_exchange .card .card-body .form-group .input-group.input-group-append__text .input-group-append__value {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    z-index: 4;
+}
+
+.template-4_exchange__v2.template-4_exchange .card .card-body .form-group .form-control::placeholder {
+    color: #797676;
+    font-size: 1em;
+}
+
+.template-4_exchange__v2.template-4_exchange .card .card-body .form-group .custom-control-label {
+    padding-top: 2px;
 }
 
 .template-4_table__v2.template-4_table .card .card-body {
@@ -2473,6 +2495,7 @@ textarea:focus,
 .template-4_header__v2 .header-language .header-language_button img {
     width: 32px;
     height: 20px;
+    margin-right: 6px;
 }
 
 .template-4_header__v2 .header-bottom .header-language .header-language_list {
@@ -2794,6 +2817,9 @@ textarea:focus,
         margin-right: 0;
     }
 
+    .template-4_header__v2 .header-language .header-language_button span {
+        display: none;
+    }
 
     .template-4_header__v2 .header-bottom .header-users_mobile {
         position: relative;
@@ -2910,4 +2936,45 @@ textarea:focus,
         flex-wrap: nowrap;
         overflow: auto;
     }
+}
+
+.template-4_notification__v2.template-4_notification .card .card-body ul li {
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.template-4_wallet {
+    background-color: #f5f5f5 !important;
+    border: 1px solid rgba(0, 0, 0, .125);
+    text-align: center;
+}
+
+.template-4_wallet .template-4_wallet__title {
+    color: #000;
+    font-size: 1em;
+    font-weight: 700;
+    padding: .75rem;
+}
+
+.template-4_wallet .template-4_wallet__value {
+    color: var(--color-main);
+    font-weight: 700;
+    font-size: 1.15em;
+    margin-top: 4px;
+}
+
+.template-4_wallet .template-4_wallet__button {
+    padding: .5rem .75rem;
+    text-align: center;
+    background-color: var(--color-main);
+}
+
+.template-4_wallet .template-4_wallet__button .template-4_wallet__button---item {
+    border-radius: 4px;
+    padding: 6px 10px;
+    gap: 8px;
+    font-size: .95em;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 0;
+    color: #fff;
 }
