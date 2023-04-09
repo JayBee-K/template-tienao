@@ -29,6 +29,7 @@
 	
 	<link rel="stylesheet" href="./assets/plugin/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/plugin/swiper/swiper.css">
+
 	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="./assets/plugin/animate.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
@@ -188,187 +189,195 @@
 		</div>
 	</div>
 </div>
-<header class="template-4_header">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-2 col-8 order-lg-1 order-1">
-				<div class="logo-area">
-					<a href="index.html" class="d-inline-block">
-						<img src="./assets/images/logo.png" alt="">
-					</a>
-				</div>
-			</div>
-			<div class="col-lg-8 order-lg-2 order-3">
-				<div class="navigation-area">
-					<ul class="list-unstyled mb-0" id="has-navigation">
-						<li>
-							<a href="#">
+<div id="template-4_header__v2" class="header template-4_header__v2 transition-default">
+	<div class="header-bottom transition-default">
+		<div class="container">
+			<div class="d-flex align-items-center">
+				<div class="header-hamburger" id="call-navigation"><span></span></div>
+				<a class="header-logo position-relative" href="">
+					<img src="./assets/images/logo.png" height="35"
+					     class="mw-100 transition-default"
+					     alt="">
+				</a>
+				<div class="header-navigation ml-auto">
+					<ul class="list-unstyled mb-0 d-flex align-items-center">
+						<li class="d-lg-none d-inline-block navigation-logo text-center position-relative">
+							<a href="/"
+							   class="d-flex align-items-center text-uppercase text-white transition-default">
+								<img src="./assets/images/logo.png" height="35" class="mw-100" alt="">
+							</a>
+						</li>
+						<li class="position-relative">
+							<a href=""
+							   class="d-flex align-items-center text-uppercase text-white transition-default">
 								Bán USDT
 							</a>
 						</li>
-						<li>
-							<a href="#">
-								MUA USDT
-							</a>
-						</li>
-						<li>
-							<a href="#">
+						<li class="position-relative">
+							<a href=""
+							   class="d-flex align-items-center text-uppercase text-white transition-default">
 								Chuyển đổi
-								<i class="fal fa-angle-down"></i>
+								<i class="fas fa-plus"></i>
 							</a>
-							<ul class="list-unstyled mb-0">
-								<li>
-									<a href="#">
+							<ul class="list-unstyled mb-0 position-absolute bg-white d-flex flex-column transition-default">
+								<li class="position-relative">
+									<a href="" class="d-flex align-items-center position-relative transition-default">
 										Chuyển đổi coin
 									</a>
 								</li>
-								<li>
-									<a href="#">
+								<li class="position-relative">
+									<a href="" class="d-flex align-items-center position-relative transition-default">
 										Chuyển đổi ngân hàng
 									</a>
 								</li>
 							</ul>
 						</li>
-						<li>
-							<a href="#">
-								Binace trade
-							</a>
-						</li>
-						<li>
-							<a href="#">
+						<li class="position-relative">
+							<a href=""
+							   class="d-flex align-items-center text-uppercase text-white transition-default">
 								Binance API
 							</a>
 						</li>
-						<li>
-							<a href="#">
+						<li class="position-relative">
+							<a href=""
+							   class="d-flex align-items-center text-uppercase text-white transition-default">
 								Cảnh báo giá
 							</a>
 						</li>
-						<li>
-							<a href="#">
+						<li class="position-relative">
+							<a href=""
+							   class="d-flex align-items-center text-uppercase text-white transition-default">
 								Tin tức
 							</a>
 						</li>
 					</ul>
-					<div class="navigation-user bg-light border-bottom d-block d-lg-none">
-						<div class="container d-none py-3 px-2">
-							<div class="row row-5">
-								<div class="col-6">
-									<a href="#modalLogin" data-toggle="modal"
-									   class="btn btn-success w-100 rounded-0">
-										Đăng nhập
-									</a>
-								</div>
-								<div class="col-6">
-									<a href="#modalRegister" data-toggle="modal"
-									   class="btn btn-outline-success rounded-0 w-100">
-										Đăng ký
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="user-login">
-							<ul class="list-unstyled mb-0">
-								<li>
-									<a href="javascript:void(0)">
-										<i class="fas fa-user mr-2"></i>
-										Thông tin tài khoản
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0)">
-										<i class="fas fa-lock-alt mr-2"></i>
-										Bảo mật
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0)">
-										<i class="fas fa-sign-out-alt mr-2"></i>
-										Đăng xuất
-									</a>
-								</li>
-							</ul>
-						</div>
+				</div>
+				<div class="header-users d-flex align-items-center justify-content-end">
+					<!--
+					<a href="" class="header-users_btn text-white d-flex align-items-center transition-default">
+						<i class="fas fa-user"></i> Đăng ký
+					</a>
+					<a href="" class="header-users_btn text-white d-flex align-items-center transition-default">
+						<i class="fas fa-lock"></i> Đăng nhập
+					</a>
+					-->
+					<div class="header-users_list position-relative">
+						<a href="" class="header-users_btn text-white d-flex align-items-center transition-default">
+							<i class="fas fa-user"></i> Tài khoản
+						</a>
+						<ul class="list-unstyled mb-0 position-absolute bg-white d-flex flex-column transition-default">
+							<li>
+								<a href="" class="d-flex align-items-center position-relative transition-default">
+									Đăng ký
+								</a>
+							</li>
+							<li>
+								<a href="" class="d-flex align-items-center position-relative transition-default">
+									Đăng nhập
+								</a>
+							</li>
+							<li>
+								<a href="" class="d-flex align-items-center position-relative transition-default">
+									Thông tin tài khoản
+								</a>
+							</li>
+							<li>
+								<a href="" class="d-flex align-items-center position-relative transition-default">
+									Thông tin tài khoản
+								</a>
+							</li>
+							<li>
+								<a href="" class="d-flex align-items-center position-relative transition-default">
+									Thông tin tài khoản
+								</a>
+							</li>
+							<li>
+								<a href="" class="d-flex align-items-center position-relative transition-default">
+									Thông tin tài khoản
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2 col-4 order-lg-3 order-2">
-				<div class="action-area">
+				<div class="header-language position-relative">
+					<a href="javascript:void(0)"
+					   class="header-language_button d-flex align-items-center text-white transition-default">
+						<img src="./assets/images/language/vn.webp" class="img-fluid transition-default" alt="">
+						<span>Tiếng Việt</span>
+					</a>
+					<div class="header-language_list position-absolute d-flex flex-column bg-white transition-default">
+						<a href="javascript:void(0)" class="header-language_list--item">
+							<img src="./assets/images/language/vn.webp" class="img-fluid" alt="">
+							Tiếng Việt
+						</a>
+						<a href="javascript:void(0)" class="header-language_list--item">
+							<img src="./assets/images/language/en.webp" class="img-fluid" alt="">
+							English
+						</a>
+						<a href="javascript:void(0)" class="header-language_list--item">
+							<img src="./assets/images/language/cn.webp" class="img-fluid" alt="">
+							中国
+						</a>
+					</div>
+				</div>
+				<div class="header-users_mobile">
+					<a href="javascript:void(0)" id="call-users" class="header-users_btn">
+						<i class="fas fa-user"></i>
+					</a>
 					<ul class="list-unstyled mb-0">
-						<li class="language">
-							<a href="javascript:void(0)">
-								<img src="./assets/images/language/vi.png" alt="">
+						<li class="users-logo text-center">
+							<a href="/" class="text-center d-inline-block align-middle">
+								<img src="./assets/images/logo.png"
+								     height="40px" class="mw-100" alt="">
 							</a>
-							<ul class="list-unstyled mb-0">
-								<li>
-									<a href="javascript:void(0)">
-										<span>
-											<img src="./assets/images/language/vi.png" alt="">
-											Tiếng Việt
-										</span>
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0)">
-										<span>
-											<img src="./assets/images/language/en.png" alt="">
-											Tiếng Anh
-										</span>
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0)">
-										<span>
-											<img src="./assets/images/language/japan.png" alt="">
-											Tiếng Nhật
-										</span>
-									</a>
-								</li>
-							</ul>
 						</li>
-						<li class="login d-none">
-							<a href="#modalLogin" data-toggle="modal">
+						<li>
+							<a href="">
+								Đăng ký
+							</a>
+						</li>
+						<li>
+							<a href="">
 								Đăng nhập
 							</a>
 						</li>
-						<li class="login-list">
-							<a href="javascript:void(0)">
-								<i class="fas fa-user"></i>
-								Tài khoản
+						<li>
+							<a href="">
+								Thông tin tài khoản
 							</a>
-							<ul class="list-unstyled mb-0">
-								<li>
-									<a href="javascript:void(0)">
-										<i class="fal fa-angle-right"></i>
-										Thông tin tài khoản
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0)">
-										<i class="fal fa-angle-right"></i>
-										Bảo mật
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0)">
-										<i class="fal fa-angle-right"></i>
-										Đăng xuất
-									</a>
-								</li>
-							</ul>
 						</li>
-						<li class="hamburger">
-							<div id="hamburger">
-								<span></span>
-							</div>
+						<li>
+							<a href="">
+								Thông tin tài khoản
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Thông tin tài khoản
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Thông tin tài khoản
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Thông tin tài khoản
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Thông tin tài khoản
+							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="overlay"></div>
-</header>
+	<div class="header-overlay" id="template-4_header__v2-overlay"></div>
+</div>
 <div class="template-4_main">
 	<div class="container">
 		<div class="row row-10">
@@ -1185,167 +1194,148 @@
 		</div>
 	</div>
 </div>
-<footer class="template-4_footer">
-	<div class="top-area">
-		<div class="container">
-			<div class="row">
-				<div class="col mt-4">
-					<div class="footer-inner">
+<footer id="footer" class="template-4_footer__v2">
+	<div class="container">
+		<div class="footer-top">
+			<div class="row g-4 g-lg-3">
+				<div class="col-lg-5">
+					<div class="footer-item">
 						<div class="footer-logo">
-							<a href="index.html" class="d-inline-block">
-								<img src="./assets/images/logo.png" alt="">
+							<a href="" class="d-inline-block align-middle">
+								<img src="./assets/images/logo.png" height="40" class="mw-100" alt="">
 							</a>
 						</div>
-						<div class="footer-heading">
-							Webtienao
+						<div class="footer-title">
+							CÔNG TY TNHH CÔNG NGHỆ WEBTIENAO
 						</div>
-						<div class="footer-desc">
-							Phần mềm, ứng dụng di động, quản trị mạng
+						<div class="footer-description">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab corporis eos in officiis sed
+							suscipit.
+						</div>
+						<div class="footer-contact d-flex flex-column">
+							<div class="footer-contact_item d-flex flex-column">
+								Hotline:
+								<a href="">
+									(+84) 024 62 757 222
+								</a>
+							</div>
+							<div class="footer-contact_item d-flex flex-column">
+								Email:
+								<a href="">
+									hotro@netpay.vn
+								</a>
+							</div>
+							<div class="footer-contact_item d-flex flex-column">
+								Địa chỉ:
+								<a href="">
+									Số 152 Trần Vỹ, Mai Dịch, Cầu Giấy, Hà Nội
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col mt-4">
-					<div class="footer-inner">
-						<div class="footer-title">
-							<span>Dịch vụ hot</span>
-						</div>
-						<div class="footer-list footer-link">
-							<ul class="list-unstyled mb-0">
-								<li>
-									<a href="#">
-										<i class="fal fa-angle-right"></i>
-										Bán bitcoin
+				<div class="col-lg-7">
+					<div class="row g-4 g-lg-3">
+						<div class="col-lg-4 col-6">
+							<div class="footer-item">
+								<div class="footer-title">
+									Dịch vụ hot
+								</div>
+								<div class="footer-list d-flex flex-column">
+									<a href="">
+										Bán Coin
 									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fal fa-angle-right"></i>
-										Bán Eth
+									<a href="">
+										Mua Coin
 									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fal fa-angle-right"></i>
-										Bán PerfectMoney
+									<a href="">
+										Trao đổi coin
 									</a>
-								</li>
-							</ul>
+									<a href="">
+										Trao đổi VNĐ
+									</a>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col mt-4">
-					<div class="footer-inner">
-						<div class="footer-title">
-							<span>Hướng dẫn</span>
-						</div>
-						<div class="footer-list footer-link">
-							<ul class="list-unstyled mb-0">
-								<li>
-									<a href="#">
-										<i class="fal fa-angle-right"></i>
+						<div class="col-lg-4 col-6">
+							<div class="footer-item">
+								<div class="footer-title">
+									Hướng dẫn
+								</div>
+								<div class="footer-list d-flex flex-column">
+									<a href="">
 										Hướng dẫn bán
 									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fal fa-angle-right"></i>
+									<a href="">
 										Hướng dẫn mua
 									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fal fa-angle-right"></i>
-										Xác thức
+									<a href="">
+										Hướng dẫn trao đổi coin
 									</a>
-								</li>
-							</ul>
+									<a href="">
+										Hướng dẫn trao đổi VNĐ
+									</a>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col mt-4">
-					<div class="footer-inner">
-						<div class="footer-title">
-							<span>Đối tác</span>
-						</div>
-						<div class="footer-list footer-image">
-							<ul class="list-unstyled mb-0">
-								<li>
-									<a href="#">
-										<img src="./assets/images/v_blue_on_white_en.png" alt="">
-										2922xxxxxxxxx
+						<div class="col-lg-4 col-6">
+							<div class="footer-item">
+								<div class="footer-title">
+									Dịch vụ
+								</div>
+								<div class="footer-list d-flex flex-column">
+									<a href="">
+										Mua mã thẻ
 									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="./assets/images/pm.png" alt="">
-										2922xxxxxxxxx
+									<a href="">
+										Nạp top
 									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col mt-4">
-					<div class="footer-inner">
-						<div class="footer-title mb-3 ">
-							<span>Mạng xã hội</span>
-						</div>
-						<div class="footer-list footer-social">
-							<ul class="list-unstyled mb-0">
-								<li>
-									<a href="" class="facebook">
-										<i class="fab fa-facebook-f"></i>
+									<a href="">
+										Sim số
 									</a>
-								</li>
-								<li>
-									<a href="" class="twitter">
-										<i class="fab fa-twitter"></i>
+									<a href="">
+										Vé máy bay
 									</a>
-								</li>
-								<li>
-									<a href="" class="youtube">
-										<i class="fab fa-youtube"></i>
+									<a href="">
+										Nick
 									</a>
-								</li>
-								<li>
-									<a href="" class="telegram">
-										<i class="fab fa-telegram-plane"></i>
+									<a href="">
+										Tài liệu
 									</a>
-								</li>
-							</ul>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="bottom-area">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-sm-6 order-md-1 order-2">
-					<div class="bottom-desc">
-						Phần mềm, ứng dụng di động, quản trị mạng
-					</div>
+		<div class="footer-bottom">
+			<div class="row align-items-center flex-column-reverse flex-lg-row">
+				<div class="col-lg-6 text-center text-lg-left mt-3 mt-lg-0">
+					<a href="">
+						© 2023 Software by Nencer Jsc.,
+					</a>
 				</div>
-				<div class="col-sm-6 order-md-2 order-1">
-					<div class="bottom-list">
-						<ul class="list-unstyled mb-0">
-							<li>
-								<a href="">
-									Japanese
-								</a>
-							</li>
-							<li>
-								<a href="">
-									English
-								</a>
-							</li>
-							<li>
-								<a href="" class="active">
-									Tiếng Việt
-								</a>
-							</li>
-						</ul>
+				<div class="col-lg-6">
+					<div class="footer-social d-flex align-items-center justify-content-center justify-content-lg-end">
+						<a href=""
+						   class="footer-social_item d-flex align-items-center justify-content-center">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a href=""
+						   class="footer-social_item d-flex align-items-center justify-content-center">
+							<i class="fab fa-telegram-plane"></i>
+						</a>
+						<a href=""
+						   class="footer-social_item d-flex align-items-center justify-content-center">
+							<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1.29348in"
+							     height="0.458531in" version="1.1" shape-rendering="geometricPrecision"
+							     text-rendering="geometricPrecision" image-rendering="optimizeQuality"
+							     fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 233.68 82.84">
+									<path fill="#fff"
+									      d="M145.99 77.44l0.08 -76.5 13.85 0c0,13.5 0,26.97 0,40.46 0,8.52 1.09,34.32 -0.35,40.87 1.34,-0.63 0.6,0.63 1.07,-1.69 0.03,-0.11 0,-2.16 0,-2.43 -0.19,-15.05 0.79,-73.03 -0.41,-77.48 -3.01,-0.79 -11.83,-1.04 -14.45,0.19 -0.57,3.61 -0.19,32.05 -0.19,38.14 0,6.09 -1.12,35.44 0.44,38.44l-0.03 -0zm-48.01 -44.56c-8.72,2.51 -16.34,10.82 -13.41,22.35 2.18,8.74 11.47,16.67 23.14,13.55 23.52,-6.31 13.72,-42.65 -9.7,-35.9l-0.03 0zm100.82 -0.79c-9.56,1.39 -17.51,10 -15.98,21.26 3.25,24.18 41.12,19.56 37.16,-5.85 -1.45,-9.18 -10.25,-17.02 -21.17,-15.41zm-52.84 45.35c0.63,6.72 7.38,4.48 13.55,4.84 1.45,-6.56 0.35,-32.35 0.35,-40.87 0,-13.5 0,-26.97 0,-40.46l-13.85 0 -0.08 76.5 0.03 0zm-144.12 -62.54l45 0 -42.76 53.28c-4.26,5.05 -4.34,7.1 -3.91,14.02l60.25 0.03c8.36,-0.08 7.05,-5.98 7.05,-13.09l-47.27 -0.19c1.04,-2.43 9.73,-12.51 12.02,-15.38l31.26 -39.21c3.74,-4.84 3.85,-7.46 3.85,-13.58l-65.49 0 0 14.15 0 -0.03zm193.9 3.91c-15.98,3.06 -29.97,17.92 -25.98,37.87 3.11,15.57 18.09,29.04 37.46,25.55 15.79,-2.87 29.26,-18.14 25.96,-37.18 -2.73,-15.68 -18.03,-29.94 -37.43,-26.23zm-74.54 58.25c3.17,5.9 1.67,5.11 13.33,5.11l0.22 -61.56 -13.25 0 0 3.72c-1.61,-0.3 -4.95,-2.46 -7.08,-3.31 -21.01,-8.2 -43.52,6.86 -43.8,29.37 -0.16,13.36 7.92,23.55 15.9,28.03 13.39,7.54 23.47,4.32 34.67,-1.39l0 0.03z"></path>
+									</svg>
+						</a>
 					</div>
 				</div>
 			</div>
