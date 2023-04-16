@@ -2521,6 +2521,6 @@ textarea:focus,
 
 }
 
-.template-4_sidebar__v2.template-4_sidebar .sidebar-item .template-4_tab ~ .card .card-body {
+.template-4_sidebar__v2.template-4_sidebar .sidebar-item .template-4_tab ~ .tab-content .card .card-body {
     padding-top: .75rem !important;
 }
