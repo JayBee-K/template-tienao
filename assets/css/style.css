@@ -1316,7 +1316,11 @@ textarea:focus,
 
 .template-4_exchange__v2.template-4_exchange .card .card-body {
     border-top: 1px solid #dee2e6 !important;
-    padding-top: 5px;
+	padding: .75rem;
+}
+
+.template-4_exchange__v2.template-4_exchange .card .card-body.border-0 {
+	border: 0 !important;
 }
 
 .template-4_exchange__v2.template-4_exchange .card .card-body .form-group > label {
