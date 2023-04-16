@@ -1302,20 +1302,21 @@ textarea:focus,
 }
 
 .template-4_tab__v2.template-4_tab .nav-tabs .nav-link {
-    font-size: 1.1em;
-    padding: 6px 25px;
-    background-color: #fff;
-    color: var(--dark);
-    border-bottom: 0;
+    font-size: 1.1em !important;
+    padding: 6px 25px !important;
+    background-color: #fff !important;
+    color: var(--dark) !important;
+    border-bottom: 0 !important;
 }
 
 .template-4_tab__v2.template-4_tab .nav-tabs .nav-link.active {
-    background-color: var(--color-main);
-    color: var(--white);
+    background-color: var(--color-main) !important;
+    color: var(--white) !important;
 }
 
 .template-4_exchange__v2.template-4_exchange .card .card-body {
     border-top: 1px solid #dee2e6 !important;
+    padding-top: 5px;
 }
 
 .template-4_exchange__v2.template-4_exchange .card .card-body .form-group > label {
@@ -2504,4 +2505,8 @@ textarea:focus,
         font-size: 14px;
     }
 
+}
+
+.template-4_sidebar__v2.template-4_sidebar .sidebar-item .template-4_tab ~ .tab-content .card .card-body {
+    padding-top: .75rem !important;
 }
