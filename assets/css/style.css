@@ -559,6 +559,7 @@ textarea:focus,
 .template-4_sidebar .sidebar-item .card .card-body {
 	overflow-y: auto;
 	padding-top: 0;
+	max-height: var(--max-height);
 }
 
 .template-4_sidebar .sidebar-item .card .card-body::-webkit-scrollbar-track {
@@ -1265,6 +1266,11 @@ textarea:focus,
 	font-size: 1.1em;
 }
 
+.template-4_sidebar__v2.template-4_sidebar .sidebar-item .card .card-body {
+	padding: 0;
+	margin: 0 .75rem .75rem;
+}
+
 .template-4_sidebar__v2.template-4_sidebar .sidebar-item .card .card-body ul li + li {
 	margin-top: 0;
 	border-top: 1px solid #e9e9e9;
@@ -1302,16 +1308,20 @@ textarea:focus,
 }
 
 .template-4_tab__v2.template-4_tab .nav-tabs .nav-link {
-	font-size: 1.1em;
-	padding: 6px 25px;
-	background-color: #fff;
-	color: var(--dark);
-	border-bottom: 0;
+	font-size: 1.1em !important;
+	padding: 6px 25px !important;
+	background-color: #fff !important;
+	color: var(--dark) !important;
+	border-bottom: 0 !important;
+}
+
+.template-4_tab__v2.template-4_tab .nav-tabs .nav-link:hover {
+	background-color: #f6f6f6 !important;
 }
 
 .template-4_tab__v2.template-4_tab .nav-tabs .nav-link.active {
-	background-color: var(--color-main);
-	color: var(--white);
+	background-color: var(--color-main) !important;
+	color: var(--white) !important;
 }
 
 .template-4_exchange__v2.template-4_exchange .card .card-body {
@@ -1482,7 +1492,7 @@ textarea:focus,
 
 .template-4_footer__v2 .footer-social {
 	gap: 8px;
-	margin-top: 10px;
+	margin-top: 15px;
 }
 
 .template-4_footer__v2 .footer-social .footer-social_item {
@@ -1502,8 +1512,12 @@ textarea:focus,
 	background-color: #121212;
 }
 
-.template-4_footer__v2 .footer-logo_payment{
-	gap: 8px;
+.template-4_footer__v2 .footer-logo_payment {
+	gap: 15px;
+}
+
+.template-4_footer__v2 .footer-logo_payment .footer-logo_payment--item{
+	gap: 3px;
 }
 
 @media screen and (max-width: 991px) {
@@ -2514,4 +2528,8 @@ textarea:focus,
 		font-size: 14px;
 	}
 
+}
+
+.template-4_sidebar__v2.template-4_sidebar .sidebar-item .template-4_tab ~ .tab-content .card .card-body {
+	padding-top: .75rem !important;
 }
