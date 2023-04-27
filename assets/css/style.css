@@ -1477,7 +1477,7 @@ textarea:focus,
 }
 
 .template-4_footer__v2 .footer-bottom {
-	padding: 24px 0 32px;
+	padding: 18px 0 24px;
 	border-top: 1px solid rgba(141, 141, 141, 0.1);
 }
 
@@ -1516,8 +1516,9 @@ textarea:focus,
 	gap: 15px;
 }
 
-.template-4_footer__v2 .footer-logo_payment .footer-logo_payment--item{
+.template-4_footer__v2 .footer-logo_payment .footer-logo_payment--item {
 	gap: 3px;
+	font-size: 12px;
 }
 
 @media screen and (max-width: 991px) {
